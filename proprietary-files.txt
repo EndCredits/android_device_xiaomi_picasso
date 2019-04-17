@@ -810,6 +810,7 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
+vendor/lib64/libkeymaster_messages.so
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.lito.so
