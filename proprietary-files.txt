@@ -125,6 +125,10 @@ vendor/lib64/libresampler.so
 vendor/lib64/libssrec.so
 vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 
+# Bluetooth (aptX)
+product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
+
 # Audio Amplifier
 vendor/firmware/tfa98xx.cnt
 
