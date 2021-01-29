@@ -288,6 +288,10 @@ endif
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(KERNEL_MODULES_DIR),$(KERNEL_MODULES_COPY))
 
+# KeyHandler
+PRODUCT_PACKAGES += \
+    KeyHandler
+
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
