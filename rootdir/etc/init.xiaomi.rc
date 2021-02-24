@@ -62,6 +62,9 @@ on boot
     chown system system /sys/class/leds/white/delay_on
     chown system system /sys/class/thermal/thermal_message/sconfig
 
+    # Touchpanel
+    chown system system /sys/touchpanel/double_tap
+
     # Set the default voltage to 5V
     setprop persist.vendor.cp.taper_term_mv 5000
     setprop persist.vendor.qg_cold_temp -150
