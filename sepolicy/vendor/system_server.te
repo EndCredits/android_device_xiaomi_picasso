@@ -1,2 +1,5 @@
 allow system_server vendor_sysfs_battery_supply:file { getattr open read write };
 allow system_server vendor_sysfs_battery_supply:file rw_file_perms;
+
+# Allow system server to r/w to IR device
+allow system_server vendor_ir_spi_device:chr_file rw_file_perms;

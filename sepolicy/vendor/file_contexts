@@ -11,7 +11,6 @@
 # Devices
 /dev/akm09970                                                   u:object_r:hall_device:s0
 /dev/elliptic(.*)?                                              u:object_r:ultrasound_device:s0
-/dev/ir_spi                                                     u:object_r:ir_device:s0
 /dev/ti-drv8846                                                 u:object_r:motor_device:s0
 /dev/xiaomi-touch                                               u:object_r:touchfeature_device:s0
 
@@ -53,6 +52,11 @@
 # LEDs
 /sys/devices/platform/soc/a84000.i2c/i2c-2/2-0064/leds(/.*)?                        u:object_r:sysfs_leds:s0
 /sys/devices/platform/soc/888000.i2c/i2c-6/6-0064/leds(/.*)?                        u:object_r:sysfs_leds:s0
+
+# IR
+/dev/ir_spi                u:object_r:lirc_device:s0
+/dev/lirc[0-9]             u:object_r:lirc_device:s0
+/dev/spidev[0-9]\.1        u:object_r:lirc_device:s0
 
 # Lights
 /vendor/bin/hw/android\.hardware\.light-service\.xiaomi                 u:object_r:hal_light_default_exec:s0
