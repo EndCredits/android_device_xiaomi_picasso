@@ -16,6 +16,7 @@ ro.surface_flinger.set_idle_timer_ms=200
 ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 debug.cpurend.vsync=false
+vendor.display.idle_time=1100
 
 ro.sf.lcd_density=436
 qemu.sf.lcd_density=436
