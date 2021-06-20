@@ -55,6 +55,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
 TARGET_KERNEL_CONFIG := vendor/picasso_user_defconfig
 
 # Platform
+BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := lito
 
 # Audio
