@@ -1,0 +1,3 @@
+allow vendor_qti_init_shell sysfs_wakeup:file setattr;
+allow vendor_qti_init_shell ctl_stop_prop:property_service set;
+allow vendor_init vendor_camera_prop:property_service set;
