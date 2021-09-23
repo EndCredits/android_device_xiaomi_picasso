@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_kernel_xiaomi_picasso",
+    "target_path": "kernel/xiaomi/picasso"
+  }
+]
