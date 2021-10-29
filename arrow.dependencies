@@ -6,5 +6,9 @@
   {
     "repository": "android_vendor_xiaomi_picasso",
     "target_path": "vendor/xiaomi/picasso"
+  },
+  {
+    "repository": "android_device_xiaomi_extras",
+    "target_path": "device/xiaomi/extras"
   }
 ]
