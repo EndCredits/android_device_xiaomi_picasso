@@ -13,6 +13,7 @@ $(call inherit-product, device/xiaomi/picasso/device.mk)
 
 # Inherit some common ArrowOS stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
+DEVICE_MAINTAINER := baolong24
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := arrow_picasso
