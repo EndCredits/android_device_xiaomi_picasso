@@ -612,10 +612,14 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/lib/libbase64.so
 vendor/lib/libcppf.so
 vendor/lib/libtrustedapploader.so
+vendor/lib/libwvkeybox.so|1d30d25fa4a9ec8c9f2bd41147da45724dbcf7de
+vendor/lib/liboemcrypto.so|2c1525754f661b20bd83a9cd4ca6b56d78d88476
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/libbase64.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so
+vendor/lib64/liboemcrypto.so|6967571dfa2de7f4d73731ab0879245361827831
+vendor/lib64/libwvkeybox.so|8898c5a7bc366bf378804e9aba3245aeacdedfd5
 vendor/lib64/mediadrm/libwvdrmengine.so
 
 # ESE
