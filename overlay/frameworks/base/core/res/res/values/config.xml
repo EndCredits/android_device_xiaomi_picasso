@@ -231,23 +231,11 @@
     <!-- Wifi driver supports batched scan -->
     <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
 
-    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
-    <integer-array name="config_keyboardTapVibePattern">
-        <item>12</item>
-    </integer-array>
-
-    <!-- Vibrator pattern for feedback about a long screen/key press -->
-    <integer-array name="config_longPressVibePattern">
-        <item>0</item>
-        <item>8</item>
-        <item>13</item>
-    </integer-array>
-
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
-        <item>0</item>
-        <item>8</item>
-        <item>13</item>
+        <item>18</item>
+        <item>30</item>
+        <item>60</item>
     </integer-array>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
