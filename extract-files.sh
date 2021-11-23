@@ -58,6 +58,10 @@ function blob_fixup() {
         vendor/etc/init/init.batterysecret.rc)
             sed -i "/seclabel/d" "${2}"
             ;;
+        vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
+            hexdump -ve '1/1 "%.2X"' "${2}" | sed "s/210080529A0A0094/210080521F2003D5/g" | xxd -r -p > "${TMPDIR}/${1##*/}"
+            mv "${TMPDIR}/${1##*/}" "${2}"
+            ;;
     esac
 }
 
