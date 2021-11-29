@@ -16,27 +16,27 @@
 -->
 <resources>
     <!-- Thermal Profiles -->
-    <string name="thermal_title">Thermal Profiles</string>
-    <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance</string>
-    <string name="thermal_default">Default</string>
+    <string name="thermal_title">Perfil termíco</string>
+    <string name="thermal_summary">Ajuste um perfil termíco de acordo com sua necessidade</string>
+    <string name="thermal_default">Padrão</string>
     <string name="thermal_benchmark">Benchmark</string>
-    <string name="thermal_browser">Browser</string>
-    <string name="thermal_camera">Camera</string>
-    <string name="thermal_dialer">Dialer</string>
-    <string name="thermal_gaming">Gaming</string>
+    <string name="thermal_browser">Internet</string>
+    <string name="thermal_camera">Câmera</string>
+    <string name="thermal_dialer">Chamadas</string>
+    <string name="thermal_gaming">Jogos</string>
     <string name="thermal_streaming">Streaming</string>
 
     <!-- Dirac settings -->
-    <string name="dirac_title">Dirac sound enhancer</string>
-    <string name="dirac_summary">Optimize sound quality with Dirac, Hi-Fi</string>
-    <string name="dirac_headset_title">Headset type</string>
-    <string name="dirac_hifi_enable_title">Enable Hi-Fi</string>
-    <string name="dirac_preset_title">Sound preset</string>
+    <string name="dirac_title">Otimizador de aúdio</string>
+    <string name="dirac_summary">Otimize a qualidade do áudio com Dirac, Hi-Fi</string>
+    <string name="dirac_headset_title">Tipo de fone de ouvido</string>
+    <string name="dirac_hifi_enable_title">Habilitar Hi-Fi</string>
+    <string name="dirac_preset_title">Predefinição de áudio</string>
 
     <string name="dirac_hifi_title">Hi-Fi</string>
-    <string name="dirac_hifi_summary">Decrease noise and Distortion and increase audio quality</string>
+    <string name="dirac_hifi_summary">Diminua o ruído e a distorção e aumente a qualidade do áudio</string>
 
-    <string name="dirac_headset_default">Default</string>
+    <string name="dirac_headset_default">Padrão</string>
     <string name="dirac_headset_earbuds">Mi Earbuds</string>
     <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
     <string name="dirac_headset_piston_1">Mi Piston 1</string>
@@ -59,30 +59,24 @@
     <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
     <string name="dirac_headset_earphone">Mi Earphones</string>
 
-    <string name="dirac_preset_default">Default</string>
+    <string name="dirac_preset_default">Padrão</string>
     <string name="dirac_preset_rock">Rock</string>
     <string name="dirac_preset_jazz">Jazz</string>
     <string name="dirac_preset_pop">Pop</string>
-    <string name="dirac_preset_classical">Classical</string>
-    <string name="dirac_preset_hiphop">Hiphop</string>
+    <string name="dirac_preset_classical">Clássica</string>
+    <string name="dirac_preset_hiphop">Hip Hop</string>
     <string name="dirac_preset_blues">Blues</string>
-    <string name="dirac_preset_electronic">Electronic</string>
+    <string name="dirac_preset_electronic">Eletrônica</string>
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
-    <string name="dirac_preset_bass_booster">Bass Booster</string>
 
     <!-- Clear Speaker -->
-    <string name="clear_speaker_title">Clear speaker</string>
-    <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
-    <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.\n\nWARNING: Ensure that any headphones are unplugged.</string>
+    <string name="clear_speaker_title">Limpar auto-falante</string>
+    <string name="clear_speaker_summary">Reproduza um áudio de 30 segundos para limpar o alto-falante</string>
+    <string name="clear_speaker_description">Execute esse recurso uma ou duas vezes se descobrir que o alto-falante está ligeiramente bloqueado por poeira. Defina o volume da mídia para o máximo.\n\nSe o alto-falante estiver muito bloqueado, execute este recurso de 2 a 5 vezes enquanto agita o dispositivo com o alto-falante voltado para baixo.\n\nAVISO: verifique se todos os fones de ouvido estão desconectados.</string>
 
     <!-- Raise to wake strings-->
-    <string name="raise_to_wake_gesture_title">Raise to wake</string>
-    <string name="raise_to_wake_gesture_summary">Wake up the device instead of pulsing notification</string>
-
-    <!--  DT2W    -->
-    <string name="dt2w_enable_title">Double-Tap to Wake </string>
-    <string name="dt2w_enable_summary">Double-tap on lockscreen to wake device</string>
+    <string name="raise_to_wake_gesture_title">Pegar para despertar</string>
+    <string name="raise_to_wake_gesture_summary">Ative o dispositivo em vez de pulsar a notificação ao pegá-lo.</string>
 </resources>
-

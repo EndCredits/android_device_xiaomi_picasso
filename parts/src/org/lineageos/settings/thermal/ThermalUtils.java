@@ -27,27 +27,28 @@ import org.lineageos.settings.utils.FileUtils;
 
 public final class ThermalUtils {
 
-    private static final String THERMAL_CONTROL = "thermal_control";
-
     protected static final int STATE_DEFAULT = 0;
     protected static final int STATE_BENCHMARK = 1;
     protected static final int STATE_BROWSER = 2;
     protected static final int STATE_CAMERA = 3;
     protected static final int STATE_DIALER = 4;
     protected static final int STATE_GAMING = 5;
-
+    protected static final int STATE_STREAMING = 6;
+    private static final String THERMAL_CONTROL = "thermal_control";
     private static final String THERMAL_STATE_DEFAULT = "0";
     private static final String THERMAL_STATE_BENCHMARK = "10";
     private static final String THERMAL_STATE_BROWSER = "11";
     private static final String THERMAL_STATE_CAMERA = "12";
     private static final String THERMAL_STATE_DIALER = "8";
     private static final String THERMAL_STATE_GAMING = "9";
+    private static final String THERMAL_STATE_STREAMING = "14";
 
     private static final String THERMAL_BENCHMARK = "thermal.benchmark=";
     private static final String THERMAL_BROWSER = "thermal.browser=";
     private static final String THERMAL_CAMERA = "thermal.camera=";
     private static final String THERMAL_DIALER = "thermal.dialer=";
     private static final String THERMAL_GAMING = "thermal.gaming=";
+    private static final String THERMAL_STREAMING = "thermal.streaming=";
 
     private static final String THERMAL_SCONFIG = "/sys/class/thermal/thermal_message/sconfig";
 
@@ -58,8 +59,10 @@ public final class ThermalUtils {
     }
 
     public static void startService(Context context) {
-        context.startServiceAsUser(new Intent(context, ThermalService.class),
-                UserHandle.CURRENT);
+        if (FileUtils.fileExists(THERMAL_SCONFIG)) {
+            context.startServiceAsUser(new Intent(context, ThermalService.class),
+                    UserHandle.CURRENT);
+        }
     }
 
     private void writeValue(String profiles) {
@@ -69,9 +72,14 @@ public final class ThermalUtils {
     private String getValue() {
         String value = mSharedPrefs.getString(THERMAL_CONTROL, null);
 
+        if (value != null) {
+             String[] modes = value.split(":");
+             if (modes.length < 5) value = null;
+         }
+
         if (value == null || value.isEmpty()) {
             value = THERMAL_BENCHMARK + ":" + THERMAL_BROWSER + ":" + THERMAL_CAMERA + ":" +
-                    THERMAL_DIALER + ":" + THERMAL_GAMING;
+                    THERMAL_DIALER + ":" + THERMAL_GAMING + ":" + THERMAL_STREAMING;
             writeValue(value);
         }
         return value;
@@ -99,10 +107,13 @@ public final class ThermalUtils {
             case STATE_GAMING:
                 modes[4] = modes[4] + packageName + ",";
                 break;
+            case STATE_STREAMING:
+                modes[5] = modes[5] + packageName + ",";
+                break;
         }
 
         finalString = modes[0] + ":" + modes[1] + ":" + modes[2] + ":" + modes[3] + ":" +
-                modes[4];
+                modes[4] + ":" + modes[5];
 
         writeValue(finalString);
     }
@@ -121,6 +132,8 @@ public final class ThermalUtils {
             state = STATE_DIALER;
         } else if (modes[4].contains(packageName + ",")) {
             state = STATE_GAMING;
+        } else if (modes[5].contains(packageName + ",")) {
+            state = STATE_STREAMING;
         }
 
         return state;
@@ -148,6 +161,8 @@ public final class ThermalUtils {
                 state = THERMAL_STATE_DIALER;
             } else if (modes[4].contains(packageName + ",")) {
                 state = THERMAL_STATE_GAMING;
+            } else if (modes[5].contains(packageName + ",")) {
+                state = THERMAL_STATE_STREAMING;
             }
         }
         FileUtils.writeLine(THERMAL_SCONFIG, state);

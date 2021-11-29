@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2015-2016 The CyanogenMod Project
+ *               2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,25 +15,19 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.thermal;
+package org.lineageos.settings.display;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-import org.lineageos.settings.utils.FileUtils;
+public class DoubleTapSettingsActivity extends PreferenceActivity {
 
-public class ThermalActivity extends PreferenceActivity {
-
-    private static final String TAG_THERMAL = "thermal";
-    private static final String THERMAL_SCONFIG = "/sys/class/thermal/thermal_message/sconfig";
+    private static final String TAG_DT2W = "doubletap";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        if (FileUtils.fileExists(THERMAL_SCONFIG)) {
-            getFragmentManager().beginTransaction().replace(android.R.id.content,
-                    new ThermalSettingsFragment(), TAG_THERMAL).commit();
-        }
+        getFragmentManager().beginTransaction().replace(android.R.id.content,
+                new DoubleTapSettingsFragment(), TAG_DT2W).commit();
     }
 }
