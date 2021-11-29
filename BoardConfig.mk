@@ -95,6 +95,10 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_picasso
+TARGET_RECOVERY_DEVICE_MODULES := libinit_picasso
+
 # Input
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY := 102
 
@@ -196,3 +200,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 include vendor/xiaomi/picasso/BoardConfigVendor.mk
+
