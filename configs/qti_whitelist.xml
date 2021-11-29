@@ -116,4 +116,6 @@
     <allow-in-power-save package="com.qualcomm.location" />
     <allow-in-power-save package="com.qualcomm.location.XT" />
     <allow-implicit-broadcast action="org.codeaurora.intent.action.CALL_COMPOSER_INFO" />
+    <!-- These are location components that need to freely run in the background -->
+    <allow-implicit-broadcast action="android.intent.action.DROPBOX_ENTRY_ADDED" />
 </config>
