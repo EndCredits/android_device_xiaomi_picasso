@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+        <privapp-permissions package="com.google.android.gms">
+                <permission name="android.permission.WRITE_DEVICE_CONFIG"/>
+                <permission name="android.permission.CAMERA_OPEN_CLOSE_LISTENER"/>
+        </privapp-permissions>
+</permissions>

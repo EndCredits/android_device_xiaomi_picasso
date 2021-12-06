@@ -302,7 +302,7 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(KERNEL_MODULES_DIR),$(KERNEL_MODULES_COPY))
 
 # KeyHandler
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     KeyHandler
 
 # Keylayout
@@ -496,3 +496,6 @@ PRODUCT_COPY_FILES += \
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePkgs
+## permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions-system_ext-Gcam.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions-system_ext-Gcam.xml \
