@@ -11,13 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from picasso device
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common syberia X stuff.
+$(call inherit-product, vendor/syberia/common.mk)
 
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_picasso
+PRODUCT_NAME := syberia_picasso
 PRODUCT_DEVICE := picasso
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30 5G
@@ -25,4 +25,4 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-BUILD_FINGERPRINT := "Redmi/picasso/picasso:11/RKQ1.200826.002/V12.5.2.0.RGICNXM:user/release-keys"
+#BUILD_FINGERPRINT := "Redmi/picasso/picasso:11/RKQ1.200826.002/V12.5.2.0.RGICNXM:user/release-keys"

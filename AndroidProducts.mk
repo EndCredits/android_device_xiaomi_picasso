@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_picasso.mk
+    $(LOCAL_DIR)/syberia_picasso.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_picasso-userdebug \
-    evolution_picasso-eng
+    syberia_picasso-userdebug \
+    syberia_picasso-eng
