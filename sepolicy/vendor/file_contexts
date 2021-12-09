@@ -25,7 +25,7 @@
 /data/vendor/fpdump(/.*)?                                               u:object_r:fingerprint_data_file:s0
 
 # Graphics
-/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param    u:object_r:sysfs_graphics:s0
+#/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param    u:object_r:sysfs_graphics:s0
 
 # HALs
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service.xiaomi_picasso                   u:object_r:hal_fingerprint_default_exec:s0
