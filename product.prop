@@ -8,5 +8,5 @@ audio.sys.offload.pstimeout.secs=3
 audio.sys.routing.latency=0
 ro.af.client_heap_size_kbyte=7168
 
-vendor.camera.aux.packagelist=com.google.android.GoogleCameraEng,com.android.mgc,com.android.camera,com.google.android.GoogleCamera
+#vendor.camera.aux.packagelist=com.google.android.GoogleCameraEng,com.android.mgc,com.android.camera,com.google.android.GoogleCamera
 ro.control_privapp_permissions=log

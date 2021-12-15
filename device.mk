@@ -499,3 +499,13 @@ PRODUCT_PACKAGES += \
 ## permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions-system_ext-Gcam.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions-system_ext-Gcam.xml \
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-V1-ndk_platform.vendor
+# Dex
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+ART_BUILD_TARGET_NDEBUG := true
+ART_BUILD_TARGET_DEBUG := false
+ART_BUILD_HOST_NDEBUG := true
+ART_BUILD_HOST_DEBUG := false
