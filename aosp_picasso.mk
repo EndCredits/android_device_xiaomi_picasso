@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/picasso/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Elixir-ish
-CUSTOM_BUILD_TYPE := OFFICIAL
+CUSTOM_BUILD_TYPE := UNOFFICIAL
 WITH_GMS := true
 IS_PHONE := true
 Elixir_MAINTAINER := dreamfan92
