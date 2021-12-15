@@ -37,3 +37,6 @@ persist.camera.gyro.disable=0
 persist.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
+
+# IORap
+ro.iorapd.enable=true
