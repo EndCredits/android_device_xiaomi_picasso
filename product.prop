@@ -10,3 +10,8 @@ ro.af.client_heap_size_kbyte=7168
 
 #vendor.camera.aux.packagelist=com.google.android.GoogleCameraEng,com.android.mgc,com.android.camera,com.google.android.GoogleCamera
 ro.control_privapp_permissions=log
+
+
+  
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true

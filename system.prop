@@ -1,3 +1,12 @@
+# ART
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+ro.vendor.qti.am.reschedule_service=true
+ro.sys.fw.dex2oat_thread_count=8
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-threads=8
+
 # Charger
 ro.charger.enable_suspend=1
 
@@ -6,7 +15,9 @@ ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_idle_timer_ms=200
 ro.surface_flinger.set_touch_timer_ms=200
-debug.sf.disable_backpressure=1
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+debug.cpurend.vsync=false
+
 qemu.sf.lcd_density=436
 
 # IMS
@@ -40,3 +51,7 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.goog
 
 # IORap
 ro.iorapd.enable=true
+
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=true
