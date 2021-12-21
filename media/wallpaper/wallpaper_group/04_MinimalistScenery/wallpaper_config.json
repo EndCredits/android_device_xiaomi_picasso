@@ -1,0 +1,37 @@
+{
+    "title": "极简风景",
+    "titleResId": "wallpaper_group_minimalist_scenery_title",
+    "cardType": 2,
+    "count": 7,
+    "slideCount": 7,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./MinimalistScenery01.jpg",
+        "originPath": "./MinimalistScenery01.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MinimalistScenery02.jpg",
+        "originPath": "./MinimalistScenery02.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MinimalistScenery03.jpg",
+        "originPath": "./MinimalistScenery03.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MinimalistScenery04.jpg",
+        "originPath": "./MinimalistScenery04.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MinimalistScenery05.jpg",
+        "originPath": "./MinimalistScenery05.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MinimalistScenery06.jpg",
+        "originPath": "./MinimalistScenery06.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MinimalistScenery07.jpg",
+        "originPath": "./MinimalistScenery07.jpg",
+        "type": "wallpaper"
+    }]
+}

@@ -1,0 +1,31 @@
+{
+	"title": "几何",
+	"titleResId": "wallpaper_group_geometric_title",
+    "subtitle":"Rutger Paulusse",
+    "subtitleResId":"wallpaper_group_geometric_subtitle",
+	"cardType": 1,
+	"count": 5,
+	"slideCount": 5,
+	"randomOrder": false,
+	"wallpapers": [{
+		"thumbPath": "./Geometries01.jpg",
+		"originPath": "./Geometries01.jpg",
+		"type": "wallpaper"
+	}, {
+		"thumbPath": "./Geometries02.jpg",
+		"originPath": "./Geometries02.jpg",
+		"type": "wallpaper"
+	}, {
+		"thumbPath": "./Geometries03.jpg",
+		"originPath": "./Geometries03.jpg",
+		"type": "wallpaper"
+	}, {
+		"thumbPath": "./Geometries04.jpg",
+		"originPath": "./Geometries04.jpg",
+		"type": "wallpaper"
+	}, {
+		"thumbPath": "./Geometries05.jpg",
+		"originPath": "./Geometries05.jpg",
+		"type": "wallpaper"
+	}]
+}

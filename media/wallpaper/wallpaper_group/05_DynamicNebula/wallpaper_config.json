@@ -1,0 +1,38 @@
+{
+	"title": "动态星云",
+	"titleResId": "wallpaper_group_dynamic_nebula_title",
+	"subtitle": "Teun van der Zalm",
+	"subtitleResId": "wallpaper_group_dynamic_nebula_subtitle",
+	"cardType": 1,
+	"count": 3,
+	"slideCount": 3,
+	"randomOrder": false,
+	"wallpapers": [{
+        "thumbPath": "./qing_star.webp",
+        "originPath": "",
+        "type": "videowallpaper",
+        "previewPath": "https://thm.w.xk.miui.com/a9036e7d1e0545cebc180fe6fbeb14aa",
+        "downloadPath": "https://f17.market.mi-img.com/download/ThemeMarket/06546256a8e9b48a818188d74114309c45ec98c29",
+        "fileSizeInKB": "28860556",
+        "productUuid": "9c0d457c-7670-4489-ad7e-d38876e7c8e4",
+        "onlineId": "bf46735a-6cf7-4131-b854-6ca312b5cd57"
+	}, {
+        "thumbPath": "./hong_star.webp",
+        "originPath": "",
+        "type": "videowallpaper",
+        "previewPath": "https://thm.w.xk.miui.com/dc8e9e7a3ee4c7276eb221bf17150564",
+        "downloadPath": "https://f17.market.mi-img.com/download/ThemeMarket/0683404ffeef24dd03296bfe0dc99876de3cebe99",
+        "fileSizeInKB": "29680824",
+        "productUuid": "fe148d3a-4e51-45eb-943a-714799cd83af",
+        "onlineId": "b07365f0-5b78-44ac-bfee-503de12090cd"
+	}, {
+        "thumbPath": "./zi_star.webp",
+        "originPath": "",
+        "type": "videowallpaper",
+        "previewPath": "https://thm.w.xk.miui.com/1728e24c0b444d11e624d261a31d039e",
+        "downloadPath": "https://f17.market.mi-img.com/download/ThemeMarket/0b53e41b1487df9c78d63be1dab79fe0df741abf8",
+        "fileSizeInKB": "27544022",
+        "productUuid": "449f25ae-79e6-4665-a9ff-34a1c9a0d918",
+        "onlineId": "83b225c3-9407-43c9-aa6c-9fef24509640"
+	}]
+}

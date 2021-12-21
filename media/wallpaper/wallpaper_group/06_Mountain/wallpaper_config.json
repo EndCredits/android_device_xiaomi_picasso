@@ -1,0 +1,37 @@
+{
+    "title": "四姑娘山",
+    "titleResId": "wallpaper_group_sgn_mountain_title",
+    "cardType": 2,
+    "count": 7,
+    "slideCount": 7,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./Mountain01.jpg",
+        "originPath": "./Mountain01.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Mountain02.jpg",
+        "originPath": "./Mountain02.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Mountain03.jpg",
+        "originPath": "./Mountain03.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Mountain04.jpg",
+        "originPath": "./Mountain04.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Mountain05.jpg",
+        "originPath": "./Mountain05.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Mountain06.jpg",
+        "originPath": "./Mountain06.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Mountain07.jpg",
+        "originPath": "./Mountain07.jpg",
+        "type": "wallpaper"
+    }]
+}

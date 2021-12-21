@@ -1,0 +1,39 @@
+{
+    "title": "自然肌理",
+    "titleResId": "wallpaper_group_natural_texture_title",
+    "subtitle":"Tom Hegen 等",
+    "subtitleResId":"wallpaper_group_natural_texture_subtitle",
+    "cardType": 2,
+    "count": 7,
+    "slideCount": 7,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./NaturalTexture01.jpg",
+        "originPath": "./NaturalTexture01.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./NaturalTexture02.jpg",
+        "originPath": "./NaturalTexture02.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./NaturalTexture03.jpg",
+        "originPath": "./NaturalTexture03.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./NaturalTexture04.jpg",
+        "originPath": "./NaturalTexture04.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./NaturalTexture05.jpg",
+        "originPath": "./NaturalTexture05.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./NaturalTexture06.jpg",
+        "originPath": "./NaturalTexture06.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./NaturalTexture07.jpg",
+        "originPath": "./NaturalTexture07.jpg",
+        "type": "wallpaper"
+    }]
+}

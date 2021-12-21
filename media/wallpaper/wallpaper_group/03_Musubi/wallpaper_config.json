@@ -1,0 +1,27 @@
+{
+    "title": "流动色彩",
+    "titleResId": "wallpaper_group_color_move_title",
+    "subtitle":"Robert Kohlhuber",
+    "subtitleResId":"wallpaper_group_color_move_subtitle",
+    "cardType": 1,
+    "count": 4,
+    "slideCount": 4,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./Musubi01.jpg",
+        "originPath": "./Musubi01.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Musubi02.jpg",
+        "originPath": "./Musubi02.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Musubi03.jpg",
+        "originPath": "./Musubi03.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Musubi04.jpg",
+        "originPath": "./Musubi04.jpg",
+        "type": "wallpaper"
+    }]
+}
