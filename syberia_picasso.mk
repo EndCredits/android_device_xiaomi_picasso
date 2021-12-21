@@ -13,6 +13,7 @@ $(call inherit-product, device/xiaomi/picasso/device.mk)
 
 # Inherit some common syberia X stuff.
 $(call inherit-product, vendor/syberia/common.mk)
+$(call inherit-product, vendor/gms/products/gms.mk)
 
 SELINUX_IGNORE_NEVERALLOWS := true
 
