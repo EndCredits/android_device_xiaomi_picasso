@@ -18,6 +18,8 @@ ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 debug.cpurend.vsync=false
 
+
+ro.sf.lcd_density=436
 qemu.sf.lcd_density=436
 
 # IMS
@@ -55,3 +57,9 @@ ro.iorapd.enable=true
 # LMKD
 ro.config.low_ram=false
 ro.lmk.log_stats=true
+
+persist.sys.force_sw_gles=1
+persist.vendor.radio.atfwd.start=true
+ro.kernel.qemu.gles=0
+qemu.hw.mainkeys=0
+debug.stagefright.ccodec=1
