@@ -178,6 +178,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
+# Dex
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+ART_BUILD_TARGET_NDEBUG := true
+ART_BUILD_TARGET_DEBUG := false
+ART_BUILD_HOST_NDEBUG := true
+ART_BUILD_HOST_DEBUG := false
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
@@ -405,6 +413,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions-system_ext-Gcam.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions-system_ext-Gcam.xml \
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson
@@ -429,6 +441,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     librmnetctl \
     libxml2
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePkgs
 
 # Seccomp
 PRODUCT_COPY_FILES += \
@@ -476,6 +492,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
 
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-V1-ndk_platform.vendor
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
@@ -494,30 +513,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePkgs
-## permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions-system_ext-Gcam.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions-system_ext-Gcam.xml \
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator-V1-ndk_platform.vendor
-# Dex
-PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-ART_BUILD_TARGET_NDEBUG := true
-ART_BUILD_TARGET_DEBUG := false
-ART_BUILD_HOST_NDEBUG := true
-ART_BUILD_HOST_DEBUG := false
-
-#Miui sounds
-#PRODUCT_COPY_FILES += \
-#    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/audio,$(TARGET_COPY_OUT_SYSTEM)/media/audio) \
-#    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/wallpaper,$(TARGET_COPY_OUT_SYSTEM)/media/wallpaper)
-
-#PRODUCT_PRODUCT_PROPERTIES += \
-#    ro.config.ringtone=Mi.ogg \
-#    ro.config.notification_sound=Ariel.ogg \
-#    ro.config.alarm_alert=Fireflies.ogg
 
