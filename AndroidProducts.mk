@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_picasso.mk
+    $(LOCAL_DIR)/cherish_picasso.mk
 
 COMMON_LUNCH_CHOICES := \
-    syberia_picasso-userdebug \
-    syberia_picasso-eng
+    cherish_picasso-userdebug \
+    cherish_picasso-eng

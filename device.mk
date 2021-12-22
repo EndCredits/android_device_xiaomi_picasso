@@ -512,12 +512,12 @@ ART_BUILD_HOST_NDEBUG := true
 ART_BUILD_HOST_DEBUG := false
 
 #Miui sounds
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/audio,$(TARGET_COPY_OUT_SYSTEM)/media/audio) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/wallpaper,$(TARGET_COPY_OUT_SYSTEM)/media/wallpaper)
+#PRODUCT_COPY_FILES += \
+#    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/audio,$(TARGET_COPY_OUT_SYSTEM)/media/audio) \
+#    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/wallpaper,$(TARGET_COPY_OUT_SYSTEM)/media/wallpaper)
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.ringtone=Mi.ogg \
-    ro.config.notification_sound=Ariel.ogg \
-    ro.config.alarm_alert=Fireflies.ogg
+#PRODUCT_PRODUCT_PROPERTIES += \
+#    ro.config.ringtone=Mi.ogg \
+#    ro.config.notification_sound=Ariel.ogg \
+#    ro.config.alarm_alert=Fireflies.ogg
 

@@ -1,4 +1,4 @@
-#!/bin/bash
+CHERISH#!/bin/bash
 #
 # Copyright (C) 2018-2020 The LineageOS Project
 #
@@ -14,9 +14,9 @@ VENDOR=xiaomi
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-SYBERIA_ROOT="$MY_DIR"/../../..
+CHERISH_ROOT="$MY_DIR"/../../..
 
-HELPER="$SYBERIA_ROOT"/vendor/syberia/build/tools/extract_utils.sh
+HELPER="$CHERISH_ROOT"/vendor/cherish/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -45,7 +45,7 @@ if [ -z "$SRC" ]; then
 fi
 
 # Initialize the helper for common device
-setup_vendor "$DEVICE" "$VENDOR" "$SYBERIA_ROOT" true "$CLEAN_VENDOR"
+setup_vendor "$DEVICE" "$VENDOR" "$CHERISH_ROOT" true "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 

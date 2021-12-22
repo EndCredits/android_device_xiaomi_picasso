@@ -11,19 +11,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from picasso device
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
-# Inherit some common syberia X stuff.
-$(call inherit-product, vendor/syberia/common.mk)
-$(call inherit-product, vendor/gms/products/gms.mk)
+# Inherit some common Cherish stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+WITH_GMS := true
 
-SELINUX_IGNORE_NEVERALLOWS := true
+# Cherishos-specific stuff
+CHERISH_BUILD_TYPE := OFFICIAL
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=DinhSan
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := syberia_picasso
+PRODUCT_NAME := cherish_picasso
 PRODUCT_DEVICE := picasso
-PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30 5G
+PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+# Build info
+BUILD_FINGERPRINT := "Redmi/picasso/picasso:11/RKQ1.200826.002/V12.5.2.0.RGICNXM:user/release-keys"
 
-#BUILD_FINGERPRINT := "Redmi/picasso/picasso:11/RKQ1.200826.002/V12.5.2.0.RGICNXM:user/release-keys"
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
