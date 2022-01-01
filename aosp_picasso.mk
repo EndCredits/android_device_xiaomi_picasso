@@ -11,18 +11,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from picasso device
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
-# Inherit some common Cherish stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common Elixir stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Elixir-ish
+CUSTOM_BUILD_TYPE := OFFICIAL
 WITH_GMS := true
-
-# Cherishos-specific stuff
-CHERISH_BUILD_TYPE := OFFICIAL
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=DinhSan
+IS_PHONE := true
+Elixir_MAINTAINER := dreamfan92
+TARGET_INCLUDE_LIVE_WALLPAPERS= false
+TARGET_INCLUDE_STOCK_ACORE := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cherish_picasso
+PRODUCT_NAME := aosp_picasso
 PRODUCT_DEVICE := picasso
 PRODUCT_MODEL := Redmi K30 5G
 PRODUCT_BRAND := Redmi

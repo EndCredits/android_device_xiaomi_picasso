@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_picasso.mk
+    $(LOCAL_DIR)/aosp_picasso.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_picasso-userdebug \
-    cherish_picasso-eng
+    aosp_picasso-userdebug \
+    aosp_picasso-eng
