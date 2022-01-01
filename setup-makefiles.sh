@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Copyright (C) 2018 The LineageOS Project
-# Copyright (C) 2019 CHERISH Project
+# Copyright (C) 2019 The AOSP Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,15 +22,15 @@ set -e
 DEVICE=picasso
 VENDOR=xiaomi
 
-INITIAL_COPYRIGHT_YEAR=2020
+INITIAL_COPYRIGHT_YEAR=2021
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-CHERISH_ROOT="$MY_DIR"/../../..
+ANDROID_ROOT="$MY_DIR"/../../..
 
-HELPER="$CHERISH_ROOT"/vendor/cherish/build/tools/extract_utils.sh
+HELPER="$ANDROID_ROOT"/tools/extract-utils/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -38,7 +38,7 @@ fi
 . "$HELPER"
 
 # Initialize the helper for device
-setup_vendor "$DEVICE" "$VENDOR" "$CHERISH"
+setup_vendor "$DEVICE" "$VENDOR" "$ANDROID_ROOT"
 
 # Copyright headers and guards
 write_headers
