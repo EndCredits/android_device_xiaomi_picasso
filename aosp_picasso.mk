@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/picasso/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Elixir-ish
-CUSTOM_BUILD_TYPE := UNOFFICIAL
+CUSTOM_BUILD_TYPE := OFFICIAL
 WITH_GMS := true
 IS_PHONE := true
 TARGET_INCLUDE_LIVE_WALLPAPERS= false
