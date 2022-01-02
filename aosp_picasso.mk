@@ -18,7 +18,6 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 CUSTOM_BUILD_TYPE := UNOFFICIAL
 WITH_GMS := true
 IS_PHONE := true
-Elixir_MAINTAINER := dreamfan92
 TARGET_INCLUDE_LIVE_WALLPAPERS= false
 TARGET_INCLUDE_STOCK_ACORE := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := false

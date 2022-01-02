@@ -40,15 +40,6 @@ constexpr const char *DEVICES[] = {
     "Redmi K30i 5G",
 };
 
-constexpr const char *BUILD_DESCRIPTION[] = {
-    "raven-user 12 SD1A.210817.036 7805805 release-keys",
-};
-
-constexpr const char *BUILD_FINGERPRINT[] = {
-    "google/raven/raven:12/SD1A.210817.036/7805805:user/"
-    "release-keys",
-};
-
 constexpr const char *CLIENT_ID[] = {
     "android-xiaomi",
 };
@@ -85,13 +76,10 @@ void load_props(const char *model, bool is_in = false) {
     ro_prop_override(source, "model", model, true);
     if (!is_in) {
       ro_prop_override(source, "name", PRODUCTS[0], true);
-      ro_prop_override(source, "fingerprint", BUILD_FINGERPRINT[0], false);
     } else {
       ro_prop_override(source, "name", PRODUCTS[1], true);
-      ro_prop_override(source, "fingerprint", BUILD_FINGERPRINT[0], false);
     }
   }
-  ro_prop_override(nullptr, "description", BUILD_DESCRIPTION[0], false);
   ro_prop_override(nullptr, "com.google.clientidbase", CLIENT_ID[0], false);
   ro_prop_override(nullptr, "product", model, false);
 }
