@@ -18,4 +18,14 @@ allow hal_fingerprint_default {
   uhid_device
 }:chr_file rw_file_perms;
 
+allow hal_fingerprint_default {
+  input_device
+  vendor_sysfs_graphics
+}: dir r_dir_perms;
+
+allow hal_fingerprint_default {
+  vendor_sysfs_fingerprint
+  vendor_sysfs_graphics
+}: file rw_file_perms;
+
 set_prop(hal_fingerprint_default, vendor_fp_prop)
