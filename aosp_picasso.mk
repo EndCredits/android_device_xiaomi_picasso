@@ -29,4 +29,6 @@ PRODUCT_MODEL := Redmi K30 5G
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 
+BUILD_FINGERPRINT := "Redmi/picasso/picasso:11/RKQ1.200826.002/V12.5.7.0.RGICNXM:user/release-keys"
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
