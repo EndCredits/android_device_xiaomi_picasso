@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <resources>
-     <!-- Ambient settings -->
+    <!-- Ambient settings -->
     <string name="ambient_enable">启用环境显示</string>
 
     <!-- Dirac settings -->
