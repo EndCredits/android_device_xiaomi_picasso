@@ -1,0 +1,2 @@
+allow untrusted_app self:udp_socket { ioctl };
+allow untrusted_app proc_net_tcp_udp:file { read open getattr };
