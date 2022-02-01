@@ -10,11 +10,3 @@ ro.af.client_heap_size_kbyte=7168
 
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
-
-# Elixir Stuffs
-org.elixir.device.name=Redmi K30 5G
-ro.elixir.device.name=Redmi K30 5G
-ro.elixir.device=picasso
-ro.elixir.maintainer=dreamfan92
-ro.elixir.maintainer.username=dreamfan92
-ro.elixir.group.url=t.me/Elixir_Discussion
