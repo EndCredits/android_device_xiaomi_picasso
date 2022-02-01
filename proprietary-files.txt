@@ -429,6 +429,18 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# Camera - from picasso_48m
+vendor/lib/camera/com.qti.sensor.picasso_wide_ov48b2q.so
+vendor/lib/camera/com.qti.sensormodule.picasso_sunny_wide_ov48b2q.bin
+vendor/lib/camera/com.qti.tuned.picasso_48m_sunny_front_depth_gc02m1_mono.bin
+vendor/lib/camera/com.qti.tuned.picasso_48m_sunny_rear_depth_gc02m1_mono.bin
+vendor/lib/camera/com.qti.tuned.picasso_sunny_wide_ov48b2q.bin
+vendor/lib64/camera/com.qti.sensor.picasso_wide_ov48b2q.so
+vendor/lib64/camera/com.qti.sensormodule.picasso_sunny_wide_ov48b2q.bin
+vendor/lib64/camera/com.qti.tuned.picasso_48m_sunny_front_depth_gc02m1_mono.bin
+vendor/lib64/camera/com.qti.tuned.picasso_48m_sunny_rear_depth_gc02m1_mono.bin
+vendor/lib64/camera/com.qti.tuned.picasso_sunny_wide_ov48b2q.bin
+
 # CDSP
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
