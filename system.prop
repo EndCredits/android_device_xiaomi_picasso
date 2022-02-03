@@ -6,6 +6,11 @@ ro.sys.fw.dex2oat_thread_count=8
 dalvik.vm.boot-dex2oat-threads=8
 dalvik.vm.dex2oat-threads=8
 
+# Blurs
+debug.sf.disable_backpressure=1
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
+
 # Charger
 ro.charger.enable_suspend=1
 
