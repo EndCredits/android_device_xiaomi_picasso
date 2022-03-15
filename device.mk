@@ -16,6 +16,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/picasso/picasso-vendor.mk)
 
+# Also include firmware update if exist
+$(call inherit-product-if-exists, vendor/xiaomi/picasso-firmware/firmware.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
