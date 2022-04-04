@@ -18,7 +18,7 @@ package {
 }
 
 cc_library {
-    name: "libdisppower-xiaomi-lito",
+    name: "libdisppower-xiaomi-sdm845",
     proprietary: true,
     srcs: [
         "disp-power/DisplayLowPower.cpp",
@@ -34,10 +34,10 @@ cc_library {
 }
 
 cc_binary {
-    name: "android.hardware.power-service.xiaomi-lito-libperfmgr",
+    name: "android.hardware.power-service.xiaomi-sdm845-libperfmgr",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.power-service.xiaomi-lito-libperfmgr.rc"],
-    vintf_fragments: ["aidl/android.hardware.power-service.xiaomi-lito.xml"],
+    init_rc: ["aidl/android.hardware.power-service.xiaomi-sdm845-libperfmgr.rc"],
+    vintf_fragments: ["aidl/android.hardware.power-service.xiaomi-sdm845.xml"],
     vendor: true,
     shared_libs: [
         "android.hardware.power-V2-ndk_platform",
@@ -46,7 +46,7 @@ cc_binary {
         "liblog",
         "libutils",
         "libbinder_ndk",
-        "libdisppower-xiaomi-lito",
+        "libdisppower-xiaomi-sdm845",
         "libperfmgr",
         "libprocessgroup",
         "pixel-power-ext-V1-ndk_platform",

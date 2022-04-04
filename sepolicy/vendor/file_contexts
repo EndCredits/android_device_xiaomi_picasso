@@ -55,7 +55,7 @@
 /data/vendor/mac_addr(/.*)?                                     u:object_r:vendor_wifi_vendor_data_file:s0
 
 # Power
-/vendor/bin/hw/android\.hardware\.power-service\.xiaomi-lito-libperfmgr  u:object_r:hal_power_default_exec:s0
+/vendor/bin/hw/android\.hardware\.power-service\.xiaomi-sdm845-libperfmgr  u:object_r:hal_power_default_exec:s0
 
 # Thermal
 /vendor/bin/mi_thermald                                         u:object_r:mi_thermald_exec:s0

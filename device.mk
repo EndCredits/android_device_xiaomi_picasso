@@ -420,7 +420,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-lito-libperfmgr
+    android.hardware.power-service.xiaomi-sdm845-libperfmgr
 
 # Permissions
 PRODUCT_COPY_FILES += \
