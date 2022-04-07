@@ -16,6 +16,7 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # DerpFest Specific
 DERP_BUILDTYPE := Official
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := derp_picasso
