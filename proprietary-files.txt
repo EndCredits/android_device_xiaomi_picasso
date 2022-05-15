@@ -580,23 +580,22 @@ vendor/etc/qdcm_calib_data_xiaomi_36_02_0c_video_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_37_02_0a_video_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_37_02_0b_video_mode_dsc_dsi_panel.xml
 
-# Display (SDM) - from nio
+# Display-Hardware - from LA.UM.9.12.r1-14400-SMxx50.0
+vendor/lib64/libdisp-aba.so|41fc61cdc8821ed206f649dd2eb5562b346ade77
 vendor/lib64/libdisplayqos.so|15701f18257c43be5657bbd867a8acf1f469e373
-vendor/lib64/libdisplayskuutils.so|3ddb2ffe55aa9aef686cf3be00ae5e0d1d8f9d93
-vendor/lib64/libdpps.so|aed0ddf27cae0c0d6fed1e27a7b19b1ffeb22002
-vendor/lib64/libhdrdynamic.so|917095388aaa80685fadcf10e414ff1261350aef
-vendor/lib64/libhdrdynamicootf.so|4bd09dd4a48176b18a64cfa14faacbe22a43366f
+vendor/lib64/libdisplayskuutils.so|30dc405f5c127c9af7b5c9e6697db896f0b13693
+vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
 vendor/lib64/libqseed3.so|c9fb729cf48278d0c87d27c0af17ae3a8ccb1bf7
-vendor/lib64/libsdm-color.so|29cbc16f6fa573d21f48e2be2ff0d51de3357378
+vendor/lib64/libsdedrm.so|40aa49fbff546526e5a01a69cbef82e19255887b
+vendor/lib64/libsdm-color.so|09e14227de5d3690a11d523d9e76148ed3327e97
 vendor/lib64/libsdm-colormgr-algo.so|1fb7f3cb11557bbf677afb5d6eda0e4e9fd3ac58
-vendor/lib64/libsdm-diag.so|57e8b57e52b98a0a151434414756fcf91147a511
-vendor/lib64/libsdm-disp-vndapis.so|fd0b0beac164c92bfa012dbc059cb50cdde2dec6
-vendor/lib64/libsdmextension.so|99377ab065105f0cbd17bbe5907cdbb8027a9f17
+vendor/lib64/libsdm-diag.so|d602a56edde3fb2cf7de81d5ab18ef2ef3cf3814
+vendor/lib64/libsdm-disp-vndapis.so|2f1abd975b1f1dbabcc410e56c29ac296adcc411
+vendor/lib64/libsdmextension.so|8627c97f04b0d542dfcfe98a212097e7d5e8c297
 vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 
 # Display postprocessing - from nio
 vendor/bin/hw/vendor.display.color@1.0-service|9c77c3655befc1c53f842e1b9605b83e3dc64259
-vendor/bin/ppd|c3c49c21a18275b0ae65b57066affa3e24a32175
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
 vendor/lib64/libdisp-aba.so|902839da31464e54bd4756747db2dd7ad867484f
 vendor/lib64/vendor.display.color@1.0.so|276f34f778d27b81d63345bc19c42f0327d21046
@@ -739,43 +738,44 @@ vendor/lib64/vendor.qti.gnss@3.0.so|d6ff647eef199f6a2f652679c13d74d06862e582
 vendor/lib64/vendor.qti.gnss@4.0-service.so|6d006555dce2da619f394b42e24104d76f79f36e
 vendor/lib64/vendor.qti.gnss@4.0.so|88572c990fcb80eec8b336fb0630f395142cc20d
 
-
-# Graphics (Adreno) - from nio
+# Graphics (Adreno) - from LA.UM.9.12.r1-14400-SMxx50.0
+-vendor/app/com.qualcomm.qti.gpudrivers.lito.api30/com.qualcomm.qti.gpudrivers.lito.api30.apk;PRESIGNED|687e8f81fe3960641d149a1958acd6b701cf8c27
 vendor/lib/egl/eglSubDriverAndroid.so|1a1c287a32095bede1cd199594cb7fb89c1c15d0
-vendor/lib/egl/libEGL_adreno.so|4ee434ffeab2568d7187635adae39106ca6163bb
+vendor/lib/egl/libEGL_adreno.so|2b96d33f61340c391cc2a6c503bff6b12f2659ed
 vendor/lib/egl/libGLESv1_CM_adreno.so|64b58204e029c848e35f50ad163952db497ea90f
-vendor/lib/egl/libGLESv2_adreno.so|1549c080357e7e059de976a2fbd39ed42105391a
+vendor/lib/egl/libGLESv2_adreno.so|472073ac858a1e571111d1be358d3e708435a911
 vendor/lib/egl/libq3dtools_adreno.so|e50851c6d93051fec5cb6b3314edf0791a539b0d
-vendor/lib/egl/libq3dtools_esx.so|8f346ae31cbd0f2b92dd597ad0b8ac94c265474a
+vendor/lib/egl/libq3dtools_esx.so|122ce1321a366c2172edb2d17fbd97ed592978bc
 vendor/lib/libC2D2.so|c1916f2adb917f3567b872670496994456472586
-vendor/lib/libCB.so|817667e1754ece87093625a779025c120bf2da06
+vendor/lib/libCB.so|f32644076f477c76d8445c8fa6e84182667c4be9
 vendor/lib/libOpenCL.so|be3067845af3b7d49ce2fcdd99625e4cd8276f09
-vendor/lib/libVkLayer_q3dtools.so|820fc5de3b93ae7c75f3e6a346efaeef864e804a
-vendor/lib/libadreno_utils.so|069864d4b01d97375035aa3d91fff49e88f05937
+vendor/lib/libVkLayer_q3dtools.so|b999685ff20a97ce6e2efd9a49c3f13114b0c4ed
+vendor/lib/libadreno_utils.so|16186218eb714c7a0c0f51dd5cb65ad1beea311f
 vendor/lib/libc2d30_bltlib.so|90766895641fbda817bb2818a0538cb66be62d8b
-vendor/lib/libgpudataproducer.so|a472512dc045e3c1ae39fbcc15d5b16e5c04bb8b
-vendor/lib/libgsl.so|cdf2bb545b573ae565032f56462287795b83cbd3
-vendor/lib/libllvm-glnext.so|dd12375353f2420bdc6808bd6033eaf7abf4bdd1
+vendor/lib/libgpudataproducer.so|2f7c2e8e51fe56fc4a19540052d8d98f08740be1
+vendor/lib/libgsl.so|42ccc3ea2648c6c573b1a35f9f83f0f121346f85
+vendor/lib/libllvm-glnext.so|72aad0fa758773037556df7776dea9787fb436e5
 vendor/lib/libllvm-qcom.so|b3de7da40d95ae3be6f2f46d5ddc221cb852efe8
 vendor/lib64/egl/eglSubDriverAndroid.so|0e0c4a1d9462c15e2b14d03b66bed51e85bd9e27
-vendor/lib64/egl/libEGL_adreno.so|a11a970b9621bb08ab6b8f60abb12c55b12ee55a
+vendor/lib64/egl/libEGL_adreno.so|59cb197303a0374b11e9db751052a4e2fbfae7c4
 vendor/lib64/egl/libGLESv1_CM_adreno.so|d22773a61614ac71cf68d874db66bbe7739761ce
-vendor/lib64/egl/libGLESv2_adreno.so|7f65ebf978e5e0bbcda168f3ffe94a5a7ca872f0
+vendor/lib64/egl/libGLESv2_adreno.so|957aef8788170c6a2a98c47923c973345c7ad013
 vendor/lib64/egl/libq3dtools_adreno.so|bbd2bdeb3d27461742b10490dc4d3f45379f276d
-vendor/lib64/egl/libq3dtools_esx.so|fb02416ee6cff35cb5899144011c803895a5868d
+vendor/lib64/egl/libq3dtools_esx.so|c906fa7cac4e8f99593968a9fe6c2d5b74552f3c
 vendor/lib64/libC2D2.so|2f5bb4e82006bcc854aa468126bd3fffab339f67
-vendor/lib64/libCB.so|063c94959b0748da37900414e0270f3dc08a7ca6
+vendor/lib64/libCB.so|133263ff178e640417790b0e51c2d59eb256f7c7
 vendor/lib64/libOpenCL.so|ce96cb481976251b309fed436c28935bad5f3e64
-vendor/lib64/libVkLayer_q3dtools.so|701597bbdbacca42238cade811ec3416dcc203d5
-vendor/lib64/libadreno_utils.so|be384cb99c00829ef61027f41f5a8fab386aa9d5
+vendor/lib64/libVkLayer_q3dtools.so|f418e113d2ffe17394ab342775b59033c39de91e
+vendor/lib64/libadreno_utils.so|0009a27f951d8c8e8ca645881a7bf8acd5f8afd2
 vendor/lib64/libc2d30_bltlib.so|6dfc4b3393a83113a91e2a3d8c2e4e58a62636dc
-vendor/lib64/libgpudataproducer.so|e67d8c3fcf91a3da4dffed3db0a44ba80bcacbf1
-vendor/lib64/libgsl.so|a8490afe3f5423eefb5ea2131925d78112233479
-vendor/lib64/libllvm-glnext.so|57d8292057944419e914b44807e58de0eb2dd6f5
+vendor/lib64/libgpudataproducer.so|73626e1a3113963cceb376ab3e742994a208698e
+vendor/lib64/libgsl.so|a7eef1364ac0f92d16f439aef623ddd1e3112e8d
+vendor/lib64/libllvm-glnext.so|1c76e8d9a07dd4a317fea206854618df97bec9aa
 vendor/lib64/libllvm-qcom.so|e4ff6f0d3cd3823fa65768b935adfe878a4bda7a
 
-# Graphics (HDR) - from nio
-vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
+# Graphics (Vulkan) - from LA.UM.9.12.r1-14400-SMxx50.0
+vendor/lib/hw/vulkan.adreno.so|3c9aaf80e21610def254a2b0866ddf4da9222016
+vendor/lib64/hw/vulkan.adreno.so|bcc2dba212dc14dedef1ce76d99422fba93e032d
 
 # Graphics Firmware
 vendor/firmware/a620_zap.b00
@@ -799,10 +799,6 @@ vendor/lib64/libqti-iopd-client.so|9e7561634158cd01b037e740e51cb22cd1119e04
 vendor/lib64/libqti-iopd.so|7aa0119a10e7d22c43369139f5e115295f5bf937
 vendor/lib64/vendor.qti.hardware.iop@1.0.so|3f40f4c385de9a3d0a44797ae0fd6346034adaf3
 vendor/lib64/vendor.qti.hardware.iop@2.0.so|db29e7381058cf53b2e8827fb2ecb51b981c204e
-
-# Graphics (Vulkan) - from nio
-vendor/lib/hw/vulkan.adreno.so|dbcf1f95f364957d79c21970c1994cdeeab087cf
-vendor/lib64/hw/vulkan.adreno.so|9aefb6da610ebda6afc7061275d1e150671cde70
 
 # IPA Firmware
 vendor/etc/init/ipa_fws.rc
