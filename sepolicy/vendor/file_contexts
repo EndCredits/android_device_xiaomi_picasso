@@ -6,6 +6,7 @@
 
 # Charger
 /vendor/bin/batterysecret                                       u:object_r:batterysecret_exec:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm7250b@2:qcom,usb-pdphy@1700/typec/port0/data_role		u:object_r:vendor_sysfs_usb_supply:s0
 
 # Devices
 /dev/akm09970                                                   u:object_r:hall_device:s0
