@@ -1,8 +1,3 @@
-service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_picasso
-    class late_start
-    user system
-    group system input uhid
-
 on init
     chmod 0666 /dev/goodix_fp
     chown system system /dev/goodix_fp
@@ -32,8 +27,6 @@ on boot
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/finger_irq
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/request_vreg
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/power_cfg
-
-    chmod 0666 /dev/input/event2
 
 on post-fs-data
     mkdir /data/vendor/fpc 0770 system system
