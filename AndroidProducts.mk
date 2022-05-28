@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_picasso.mk
+    $(LOCAL_DIR)/kscope_picasso.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_picasso-userdebug \
-    derp_picasso-eng
+    kscope_picasso-userdebug \
+    kscope_picasso-eng
