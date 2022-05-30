@@ -1062,6 +1062,8 @@ vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # RIL
+product/etc/permissions/qti_telephony_hidl_wrapper_prd.xml
+product/etc/permissions/qti_telephony_utils_prd.xml
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
