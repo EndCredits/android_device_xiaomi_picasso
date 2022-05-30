@@ -1321,6 +1321,7 @@ vendor/etc/sensors/proto/sns_mcmd.proto
 vendor/etc/sensors/proto/sns_motion_detect.proto
 vendor/etc/sensors/proto/sns_multishake.proto
 vendor/etc/sensors/proto/sns_oem1.proto
+vendor/etc/sensors/proto/sns_oem2.proto
 vendor/etc/sensors/proto/sns_oem3.proto
 vendor/etc/sensors/proto/sns_offbody_detect.proto
 vendor/etc/sensors/proto/sns_pedometer.proto
