@@ -186,9 +186,6 @@ ro.nfc.port=I2C
 # Pre-rendering
 ro.vendor.perf.scroll_opt=true
 
-# Qualcomm System Daemon
-persist.vendor.qcomsysd.enabled=1
-
 # RCS
 persist.rcs.supported=0
 
