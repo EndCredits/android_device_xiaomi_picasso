@@ -63,9 +63,6 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
 TARGET_KERNEL_CONFIG := vendor/picasso_user_defconfig
 
-# Platform
-TARGET_BOARD_PLATFORM := lito
-
 # Audio
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
@@ -96,9 +93,6 @@ TARGET_USES_HWC2 := true
 
 # SurfaceFlinger
 TARGET_USE_AOSP_SURFACEFLINGER := true
-
-# DRM
-TARGET_ENABLE_MEDIADRM_64 := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
@@ -151,9 +145,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
-
-# QCOM
-BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
