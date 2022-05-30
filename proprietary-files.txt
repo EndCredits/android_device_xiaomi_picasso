@@ -1066,7 +1066,7 @@ product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
-system_ext/etc/permissions/telephonyservice.xml
+system_ext/etc/permissions/telephonyservice.xml|b7831598d3c19c6ce4ef431d1cc44d94c3c35a8d
 system_ext/framework/qcrilhook.jar
 system_ext/framework/qti-telephony-common.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
