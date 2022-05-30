@@ -827,7 +827,7 @@ vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
 vendor/lib/libqtikeymaster4.so
-vendor/lib64/libkeymaster_messages.so
+vendor/lib64/libkeymaster_messages.so|ded5c943c17022eb34cafefdeefb1fccf3a9ae96
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
