@@ -41,6 +41,12 @@
 # Health
 /sys/devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify(/.*)?          u:object_r:sysfs_battery_supply:s0
 
+# Firmware
+/bt_firmware(/.*)?                                          u:object_r:bt_firmware_file:s0
+/firmware(/.*)?                                             u:object_r:firmware_file:s0
+/persist(/.*)?                                              u:object_r:mnt_vendor_file:s0
+/dsp(/.*)?                                                  u:object_r:adsprpcd_file:s0
+
 # LEDs
 /sys/devices/platform/soc/a84000.i2c/i2c-2/2-0064/leds(/.*)?                        u:object_r:sysfs_leds:s0
 /sys/devices/platform/soc/888000.i2c/i2c-6/6-0064/leds(/.*)?                        u:object_r:sysfs_leds:s0
