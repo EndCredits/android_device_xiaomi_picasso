@@ -35,5 +35,4 @@ libMIAIHDRhvx_interface.so 64
 libmibokeh_712.so 64
 libSNPE.so 64
 libPlatformValidatorShared.so 64
-libc++_shared.so 64
 libsnpe_dsp_domains_v2.so 64
