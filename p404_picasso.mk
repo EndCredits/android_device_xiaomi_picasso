@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/picasso/device.mk)
 # Inherit some common 404 stuff.
 $(call inherit-product, vendor/404/configs/common.mk)
 
+# Include GAPPS
+WITH_GAPPS := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := p404_picasso
 PRODUCT_DEVICE := picasso
