@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from V13.0.1.1.32.DEV.
+# All unpinned blobs are extracted from 13.0.2.0.SGICNXM.
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
