@@ -439,10 +439,6 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
-# Remove packages
-PRODUCT_PACKAGES += \
-    Remove_Packages
-
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
