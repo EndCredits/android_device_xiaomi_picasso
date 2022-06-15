@@ -228,7 +228,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_picasso
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -286,6 +286,9 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.xiaomi.rc \
     ueventd.qcom.rc
+
+PRODUCT_PACKAGES += \
+    init.fingerprint.rc
 
 # IFAA manager
 PRODUCT_PACKAGES += \
