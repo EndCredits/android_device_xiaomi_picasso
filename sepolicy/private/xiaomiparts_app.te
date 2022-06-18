@@ -33,3 +33,6 @@ allow xiaomiparts_app {
   sysfs_leds
   sysfs_thermal
 }:file rw_file_perms;
+
+allow xiaomiparts_app system_data_file:dir { search };
+allow xiaomiparts_app user_profile_root_file:dir { search };
