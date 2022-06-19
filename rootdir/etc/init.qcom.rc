@@ -562,11 +562,6 @@ service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     group vendor_qrtr
     capabilities NET_BIND_SERVICE
 
-service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
-    class core
-    user root
-    oneshot
-
 service vendor.bt_wdsdaemon /system/vendor/bin/wdsdaemon -su
     class late_start
     user root

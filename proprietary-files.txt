@@ -965,10 +965,10 @@ vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 
 # QMI
-vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/bin/qmipriod
 vendor/etc/init/qmipriod.rc
+vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
