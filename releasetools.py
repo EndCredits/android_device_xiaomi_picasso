@@ -16,23 +16,21 @@
 import common
 
 def FullOTA_InstallEnd(info):
-  OTA_InstallEnd(info)
+  input_zip = info.input_zip
+  OTA_UpdateFirmware(info)
+  OTA_InstallEnd(info, input_zip)
   return
 
 def IncrementalOTA_InstallEnd(info):
-  OTA_InstallEnd(info)
+  input_zip = info.input_zip
+  OTA_UpdateFirmware(info)
+  OTA_InstallEnd(info, input_zip)
   return
 
-def AddImage(info, basename, dest):
-  name = basename
-  data = info.input_zip.read("IMAGES/" + basename)
-  common.ZipWriteStr(info.output_zip, name, data)
-  info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
-
-def OTA_InstallEnd(info):
+def OTA_UpdateFirmware(info):
   info.script.Print("Patching firmware images...")
-  AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
-  AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
+  currentFirmwareVersion = "miui_PICASSO_V13.0.2.0.SGICNXM_12.0"
+  info.script.Print("Current built-in firmware version is: ", currentFirmwareVersion)
   # Firmware
   info.script.AppendExtra('package_extract_file("install/firmware-update/abl.elf", "/dev/block/bootdevice/by-name/abl");')
   info.script.AppendExtra('package_extract_file("install/firmware-update/aop.mbn", "/dev/block/bootdevice/by-name/aop");')
@@ -51,4 +49,17 @@ def OTA_InstallEnd(info):
   info.script.AppendExtra('package_extract_file("install/firmware-update/xbl.elf", "/dev/block/bootdevice/by-name/xbl");')
   info.script.AppendExtra('package_extract_file("install/firmware-update/xbl_config.elf", "/dev/block/bootdevice/by-name/xbl_config");')
   info.script.AppendExtra('package_extract_file("install/firmware-update/featenabler.mbn", "/dev/block/bootdevice/by-name/featenabler");')
+
+def AddImage(info, input_zip, basename, dest):
+  name = basename
+  data = input_zip.read("IMAGES/" + basename)
+  common.ZipWriteStr(info.output_zip, name, data)
+  info.script.Print("Flashing {} image".format(dest.split('/')[-1]))
+  info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
+
+def OTA_InstallEnd(info, input_zip):
+  info.script.Print("Patching vbmeta image...")
+  AddImage(info, input_zip, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
+  info.script.Print("Patching dtbo image...")
+  AddImage(info, input_zip, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
   return
