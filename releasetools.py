@@ -29,7 +29,8 @@ def IncrementalOTA_InstallEnd(info):
 
 def OTA_UpdateFirmware(info):
   info.script.Print("Patching firmware images...")
-  info.script.Print("Current built-in firmware version is: miui_PICASSO_V13.0.2.0.SGICNXM_12.0")
+  currentFirmwareVersion = "miui_PICASSO_V13.0.2.0.SGICNXM_12.0"
+  info.script.Print("Current built-in firmware version is: " + currentFirmwareVersion)
   # Firmware
   info.script.AppendExtra('package_extract_file("install/firmware-update/abl.elf", "/dev/block/bootdevice/by-name/abl");')
   info.script.AppendExtra('package_extract_file("install/firmware-update/aop.mbn", "/dev/block/bootdevice/by-name/aop");')
