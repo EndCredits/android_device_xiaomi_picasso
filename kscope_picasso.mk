@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
 # Inherit some common Kaleidoscope stuff.
-$(call inherit-product, vendor/kscope/config/mobile.mk)
+$(call inherit-product, vendor/kscope/target/product/mobile.mk)
 
 # Kaleidoscope Specific
 TARGET_SUPPORTS_QUICK_TAP := true
