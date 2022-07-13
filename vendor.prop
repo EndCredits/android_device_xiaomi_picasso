@@ -108,6 +108,10 @@ drm.service.enabled=true
 # Factory Reset Protection
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Fingerprint
+ro.hardware.fp.sideCap=true
+ro.hardware.fp.vendor=goodix,fpc
+
 # Keystore
 ro.hardware.keystore_desede=true
 
