@@ -147,6 +147,9 @@ media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
 
+# MM
+persist.mm.enable.prefetch=true
+
 # Netflix
 ro.netflix.bsp_rev=Q7250-19133-1
 
