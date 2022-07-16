@@ -1,1 +1,2 @@
 set_prop(rild, deviceid_prop)
+get_prop(rild, default_prop)
