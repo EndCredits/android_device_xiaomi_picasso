@@ -21,15 +21,4 @@
     -->
     <integer name="config_fingerprintSensorLocation">3</integer>
      
-    <!-- Whether to show battery health -->
-    <bool name="config_show_battery_health">true</bool>
-
-    <!-- Define battery design capacity node -->
-    <string name="config_battery_capacity_design">/sys/class/power_supply/bms/charge_full_design</string>
-
-    <!-- Define battery now capacity node -->
-    <string name="config_battery_capacity_now">/sys/class/power_supply/bms/charge_full</string>
-
-    <!-- Define battery charge cycle node -->
-    <string name="config_battery_charge_cycle">/sys/class/power_supply/bms/cycle_count</string>
 </resources>
