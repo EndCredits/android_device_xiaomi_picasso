@@ -150,7 +150,7 @@ media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
-ro.config.media_vol_steps=25
+ro.config.media_vol_steps=30
 
 # MM
 persist.mm.enable.prefetch=true
