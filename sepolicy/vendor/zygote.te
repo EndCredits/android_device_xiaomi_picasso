@@ -1,1 +1,1 @@
-allow zygote device:file { open write };
+allow zygote device:file rw_file_perms;

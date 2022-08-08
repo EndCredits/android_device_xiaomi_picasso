@@ -12,6 +12,9 @@ allow untrusted_app sysfs_net:dir { search read };
 allow untrusted_app sysfs_net:file { getattr open read };
 allow untrusted_app wifi_hal_prop:file { map };
 allow untrusted_app anr_data_file:dir { read open };
+allow untrusted_app sysfs:dir rw_dir_perms;
+allow untrusted_app sysfs_android_usb:dir rw_dir_perms;
+allow untrusted_app self:udp_socket { ioctl };
 
 get_prop(untrusted_app, net_dns_prop)
 get_prop(untrusted_app, wifi_hal_prop)
