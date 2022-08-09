@@ -576,10 +576,10 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 H 200 V 95 H 0 V 0 Z@right</string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 H -236 V 95 H 0 V 0 Z@right</string>
 
     <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
-         M 0,0 H 200 V 95 H 0 V 0 Z@right
+         M 0,0 H -236 V 95 H 0 V 0 Z@right
     </string>
     <!-- The default peak refresh rate for a given device. Change this value if you want to allow
          for higher refresh rates to be automatically used out of the box -->
