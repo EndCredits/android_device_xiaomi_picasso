@@ -272,8 +272,10 @@ PRODUCT_COPY_FILES += \
 
 # Init scripts
 PRODUCT_PACKAGES += \
-    fstab.qcom \
-    fstab.qcom.ramdisk \
+    fstab.default \
+    fstab.default.ramdisk \
+    fstab.emmc \
+    fstab.emmc.ramdisk \
     init.class_main.sh \
     init.mdm.sh \
     init.qcom.class_core.sh \
