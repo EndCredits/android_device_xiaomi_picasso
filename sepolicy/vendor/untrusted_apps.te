@@ -15,6 +15,7 @@ allow untrusted_app anr_data_file:dir { read open };
 allow untrusted_app sysfs:dir rw_dir_perms;
 allow untrusted_app sysfs_android_usb:dir rw_dir_perms;
 allow untrusted_app self:udp_socket { ioctl };
+allow untrusted_app system_linker_exec:file { execmod };
 
 get_prop(untrusted_app, net_dns_prop)
 get_prop(untrusted_app, wifi_hal_prop)
