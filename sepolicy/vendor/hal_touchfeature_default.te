@@ -9,4 +9,4 @@ hal_attribute_hwservice(hal_touchfeature, hal_touchfeature_hwservice)
 binder_call(hal_touchfeature_client, hal_touchfeature_server)
 
 allow hal_touchfeature_default touchfeature_device:chr_file rw_file_perms;
-allow hal_touchfeature_default vndbinder_device:chr_file r_file_perms;
+allow hal_touchfeature_default vndbinder_device:chr_file rw_file_perms;
