@@ -33,3 +33,4 @@ allow hal_fingerprint_default system_data_root_file:file { read write getattr ap
 set_prop(hal_fingerprint_default, vendor_fp_prop)
 
 allow init hal_fingerprint_default:process { ptrace };
+allow hal_fingerprint_default rootfs:dir rw_dir_perms;
