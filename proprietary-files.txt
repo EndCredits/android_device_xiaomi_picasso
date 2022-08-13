@@ -670,6 +670,7 @@ vendor/lib64/libgf_ca.so|cbb9868ca7a195b65a728073a30e72f7b8bb849f
 vendor/lib64/libgf_hal.so|4bc0823421393d7d9867ab57cfd820a4ed809ee6
 vendor/lib64/libgoodixhwfingerprint.so|1e931528dfe44adcf29e617bc641b0f6c068c069
 vendor/lib64/vendor.goodix.hardware.cap.biometrics.fingerprint@2.1.so|412381af7a27923a4838ed9fd804bad9e533b92c
+vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so|393d8da1466f00bc4479f557ce5d41b879831eee
 
 # FM
 vendor/lib/vendor.qti.hardware.fm@1.0.so
@@ -797,14 +798,6 @@ vendor/firmware/a650_zap.b01
 vendor/firmware/a650_zap.b02
 vendor/firmware/a650_zap.elf
 vendor/firmware/a650_zap.mdt
-
-# IOP
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/libqti-iopd.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
 # Graphics (Vulkan) - from nio
 vendor/lib/hw/vulkan.adreno.so|dbcf1f95f364957d79c21970c1994cdeeab087cf
@@ -967,32 +960,6 @@ vendor/lib/libsn100u_fw.so
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
-
-
-# Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libperfioctl.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libmeters.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libperfioctl.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
 
 # QCC
 vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
