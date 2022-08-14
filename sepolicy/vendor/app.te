@@ -3,12 +3,3 @@ allow { appdomain -isolated_app } public_adsprpcd_file:file r_file_perms;
 
 get_prop({ appdomain -isolated_app }, vendor_fp_prop)
 get_prop({ appdomain -isolated_app }, vendor_tee_listener_prop)
-
-get_prop(untrusted_app, wifi_prop)
-allow untrusted_app wifi_prop:file { map };
-get_prop(untrusted_app, bluetooth_prop)
-get_prop(priv_app, aac_drc_prop)
-allow priv_app aac_drc_prop:file { map };
-get_prop(priv_app, ab_update_gki_prop)
-allow priv_app zygote:unix_stream_socket { getopt };
-allow isolated_app privapp_data_file:file { setattr };

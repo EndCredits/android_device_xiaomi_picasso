@@ -1,0 +1,26 @@
+get_prop(untrusted_app, vendor_default_prop)
+allow untrusted_app vendor_default_prop:file { map };
+allow untrusted_app self:netlink_route_socket { bind };
+allow untrusted_app proc_zoneinfo:file { read open getattr };
+allow untrusted_app proc:file { read open getattr };
+allow untrusted_app dalvikcache_data_file:file { execmod };
+allow untrusted_app proc_vmstat:file { open };
+allow untrusted_app cgroup:file { read open getattr };
+get_prop(untrusted_app, aac_drc_prop)
+allow untrusted_app aac_drc_prop:file { map };
+get_prop(untrusted_app, ab_update_gki_prop)
+allow untrusted_app ab_update_gki_prop:file { map };
+get_prop(untrusted_app, adbd_prop)
+allow untrusted_app zygote:unix_stream_socket { getopt };
+allow untrusted_app proc_version:file { read };
+allow untrusted_app proc_tty_drivers:file { read open getattr };
+get_prop(untrusted_app, qemu_hw_prop)
+get_prop(untrusted_app, qemu_sf_lcd_density_prop)
+allow untrusted_app system_lib_file:file { execmod };
+allow untrusted_app window_service:service_manager { find };
+get_prop(untrusted_app, oem_unlock_prop)
+allow untrusted_app input_device:dir { search };
+allow untrusted_app sysfs_net:dir { search };
+allow untrusted_app proc_max_map_count:file { read };
+get_prop(untrusted_app, serialno_prop)
+allow untrusted_app input_device:chr_file { getattr };

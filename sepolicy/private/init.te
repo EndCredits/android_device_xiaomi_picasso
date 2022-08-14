@@ -1,0 +1,6 @@
+allow init property_type:file { append create getattr map open read relabelto rename setattr unlink write };
+allow init debugfs_tracing_debug:dir { mounton };
+allow init sysfs:file { write open read getattr };
+allow init system_file:dir { relabelfrom };
+allow init system_file:file { relabelfrom };
+allow init system_file:lnk_file { relabelfrom };
