@@ -1,0 +1,3 @@
+get_prop(priv_app, vendor_default_prop)
+allow priv_app vendor_default_prop:file { read open map };
+allow priv_app zygote:unix_stream_socket { getopt };

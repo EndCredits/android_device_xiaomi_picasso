@@ -1,0 +1,2 @@
+allow system_server fuse:file { read open };
+binder_call(system_server, init)

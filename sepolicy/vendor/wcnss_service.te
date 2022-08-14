@@ -1,2 +1,4 @@
 allow vendor_wcnss_service mnt_vendor_file:dir rw_dir_perms;
 allow vendor_wcnss_service mnt_vendor_file:file create_file_perms;
+allow vendor_wcnss_service vendor_wifi_vendor_wpa_socket:dir { remove_name add_name create search write open read };
+allow vendor_wcnss_service vendor_wifi_vendor_wpa_socket:sock_file { read open write getattr create unlink };

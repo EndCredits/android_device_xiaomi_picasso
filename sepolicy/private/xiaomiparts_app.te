@@ -5,6 +5,8 @@ hal_client_domain(xiaomiparts_app, hal_motor)
 binder_call(xiaomiparts_app, gpuservice)
 binder_call(xiaomiparts_app, hal_motor)
 
+get_prop(xiaomiparts_app, default_prop)
+
 allow xiaomiparts_app {
   activity_service
   activity_task_service
@@ -25,14 +27,16 @@ allow xiaomiparts_app {
 
 allow xiaomiparts_app system_app_data_file:dir create_dir_perms;
 allow xiaomiparts_app system_app_data_file:{ file lnk_file } create_file_perms;
-
+allow xiaomiparts_app system_data_file:dir { search };
+allow xiaomiparts_app user_profile_root_file:dir { search };
 allow xiaomiparts_app sysfs_leds:dir r_dir_perms;
+allow xiaomiparts_app game_service:service_manager { find };
+allow xiaomiparts_app overlay_service:service_manager { find };
+allow xiaomiparts_app content_capture_service:service_manager { find };
+allow xiaomiparts_app hint_service:service_manager { find };
 
 allow xiaomiparts_app {
   cgroup
   sysfs_leds
   sysfs_thermal
 }:file rw_file_perms;
-
-allow xiaomiparts_app system_data_file:dir rw_dir_perms;
-allow xiaomiparts_app user_profile_root_file:dir rw_dir_perms;
