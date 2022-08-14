@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/kscope_picasso.mk
+    $(LOCAL_DIR)/arrow_picasso.mk
 
 COMMON_LUNCH_CHOICES := \
-    kscope_picasso-userdebug \
-    kscope_picasso-eng
+    arrow_picasso-userdebug \
+    arrow_picasso-eng

@@ -22,7 +22,7 @@ $(call inherit-product, vendor/xiaomi/picasso-firmware/firmware.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-kscope
+    $(LOCAL_PATH)/overlay-arrow
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
@@ -272,8 +272,10 @@ PRODUCT_COPY_FILES += \
 
 # Init scripts
 PRODUCT_PACKAGES += \
-    fstab.qcom \
-    fstab.qcom.ramdisk \
+    fstab.default \
+    fstab.default.ramdisk \
+    fstab.emmc \
+    fstab.emmc.ramdisk \
     init.class_main.sh \
     init.mdm.sh \
     init.qcom.class_core.sh \
@@ -283,6 +285,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.recovery.qcom.rc \
     init.target.rc \
+    init.uclamp_tuning.rc \
     init.xiaomi.rc \
     ueventd.qcom.rc
 
