@@ -31,3 +31,4 @@ allow hal_fingerprint_default {
 }: file rw_file_perms;
 
 set_prop(hal_fingerprint_default, vendor_fp_prop)
+allow hal_fingerprint_default system_data_root_file:dir rw_dir_perms;
