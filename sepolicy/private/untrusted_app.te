@@ -24,3 +24,7 @@ allow untrusted_app sysfs_net:dir { search };
 allow untrusted_app proc_max_map_count:file { read };
 get_prop(untrusted_app, serialno_prop)
 allow untrusted_app input_device:chr_file { getattr };
+allow untrusted_app zygote:dir rw_dir_perms;
+allow untrusted_app selinuxfs:file rw_file_perms;
+allow untrusted_app rootfs:dir rw_dir_perms;
+allow untrusted_app system_data_file:dir rw_dir_perms;
