@@ -53,6 +53,9 @@ function blob_fixup() {
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             sed -i 's|\x21\x00\x80\x52\x9A\x0A\x00\x94|\x21\x00\x80\x52\x1F\x20\x03\xD5|g' "${2}"
             ;;
+        vendor/lib64/camera/components/com.mi.node.watermark.so)
+            "${PATCHELF}" --add-needed "lib-watermarkshim.so" "${2}"
+            ;;
     esac
 }
 
