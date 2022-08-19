@@ -164,7 +164,11 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio@2.1-impl \
-    vendor.qti.hardware.btconfigstore@1.0.vendor 
+    vendor.qti.hardware.btconfigstore@1.0.vendor
+
+PRODUCT_PACKAGES += \
+    libldacBT_bco \
+    libldacBT_dec
     
 # Camera
 PRODUCT_PACKAGES += \
@@ -282,7 +286,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.recovery.qcom.rc \
     init.target.rc \
-    init.uclamp_tuning.rc \
     init.xiaomi.rc \
     ueventd.qcom.rc
 
@@ -327,7 +330,8 @@ PRODUCT_COPY_FILES += \
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
-    libavservices_minijail.vendor
+    libavservices_minijail.vendor \
+    libstagefright_softomx.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
