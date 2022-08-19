@@ -12,27 +12,9 @@
      limitations under the License.
 -->
 <resources>
-     <!-- Device specific -->
-    <string name="device_specific_settings_title">设备特殊设置</string>
-    <string name="device_specific_settings_summary">红米 K30 5G特殊设置</string>
-    <string name="device_refresh_rate">屏幕刷新率</string>
-    <string name="device_min_refresh_rate">最小刷新率</string>
-    <string name="device_power_save_refresh_rate">省电模式刷新率</string>
-    <string name="device_power_save_refresh_rate_switch">当开启省电模式时，自动降低刷新率</string>
-    <string name="device_cutout">缺口/刘海</string>
-    <string name="device_pill_style_notch">药丸形缺口</string>
     <!--  DT2W    -->
     <string name="dt2w_enable_title">点按两次来唤醒 </string>
     <string name="dt2w_enable_summary">在屏幕关闭的状态下，双击开启屏幕</string>
-    <!-- Thermal Profiles -->
-    <string name="thermal_title">温控</string>
-    <string name="thermal_summary">调整每个应用程序的温控以获得最佳性能</string>
-    <string name="thermal_default">默认</string>
-    <string name="thermal_benchmark">跑分</string>
-    <string name="thermal_camera">相机</string>
-    <string name="thermal_dialer">电话</string>
-    <string name="thermal_gaming">游戏</string>
-    <string name="thermal_streaming">流式</string>
     <!-- Refresh Rates -->
     <string name="fps_title">刷新率</string>
     <string name="fps_summary">调整每个应用的刷新率</string>

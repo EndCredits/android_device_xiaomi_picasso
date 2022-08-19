@@ -12,17 +12,6 @@
      limitations under the License.
 -->
 <resources>
-
-    <!-- Device specific -->
-    <string name="device_specific_settings_title">기기 전용 설정</string>
-    <string name="device_specific_settings_summary">Redmi K30 5G을 위한 추가 설정</string>
-    <string name="device_refresh_rate">화면 새로고침 빈도</string>
-    <string name="device_cutout">노치/컷아웃</string>
-    <string name="device_min_refresh_rate">최소 화면 새로고침 빈도</string>
-    <string name="device_power_save_refresh_rate">절전 모드 새로고침 빈도</string>
-    <string name="device_power_save_refresh_rate_switch">절전 모드에서 화면 새로고침 빈도를 자동으로 낮춥니다.</string>
-    <string name="device_pill_style_notch">알약 모양 노치</string>
-
     <!-- Dirac settings -->
     <string name="dirac_title">Mi 사운드 강화</string>
     <string name="dirac_summary">음질 최적화</string>
@@ -67,17 +56,6 @@
     <!--  DT2W    -->
     <string name="dt2w_enable_title">두 번 두드려 깨우기</string>
     <string name="dt2w_enable_summary">꺼진 화면을 두 번 두드려 화면을 켭니다.</string>
-
-    <!-- Thermal Profiles -->
-    <string name="thermal_title">열 프로필</string>
-    <string name="thermal_summary">최적의 성능을 위해 앱별로 열 프로필을 지정합니다. 커널에서 지원해야 합니다.</string>
-    <string name="thermal_default">기본값</string>
-    <string name="thermal_benchmark">벤치마크</string>
-    <string name="thermal_browser">브라우저</string>
-    <string name="thermal_camera">카메라</string>
-    <string name="thermal_dialer">다이얼</string>
-    <string name="thermal_gaming">게임</string>
-    <string name="thermal_youtube">Youtube</string>
 
     <!-- Refresh Rates -->
     <string name="fps_title">화면 새로고침 빈도</string>

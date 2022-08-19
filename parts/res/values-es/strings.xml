@@ -12,10 +12,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="device_specific_settings_title">Estilo del notch</string>
-    <string name="device_specific_settings_summary">Intercambia el estilo del notch entre relleno o sin relleno.</string>
-    <string name="device_pill_style_notch">Rellenar notch (requiere reinicio del UI)</string>
-
     <!-- DT2W -->
     <string name="dt2w_enable_title">Doble toque para despertar</string>
     <string name="dt2w_enable_summary">Toca dos veces cualquier punto de la pantalla en suspensión para activar el dispositivo.</string>
@@ -65,17 +61,6 @@
     <string name="dirac_hifi_enable_title"> Activar Hi-fi</string>
     <string name="dirac_hifi_title">Sonido de alta fidelidad</string>
     <string name="dirac_hifi_summary">Reduce el rudio y la distorsión y mejora la calidad del audio.</string>
-
-    <!-- Thermal Profiles -->
-    <string name="thermal_title">Perfiles térmicos</string>
-    <string name="thermal_summary">Ajusta los perfiles térmicos de cada aplicación para un rendimiento óptimo.</string>
-    <string name="thermal_default">Por defecto</string>
-    <string name="thermal_benchmark">Benchmark</string>
-    <string name="thermal_browser">Navegador web</string>
-    <string name="thermal_camera">Cámara</string>
-    <string name="thermal_dialer">Llamadas</string>
-    <string name="thermal_gaming">Juegos</string>
-    <string name="thermal_youtube">YouTube</string>
 
      <!-- Dirac QS tile -->
     <string name="dirac_qs_tile_title">Ecualizador Dirac</string>
