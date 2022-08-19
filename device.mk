@@ -191,6 +191,10 @@ ART_BUILD_HOST_DEBUG := false
 
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
+# Camera Shim
+PRODUCT_PACKAGES += \
+    libpiex_shim
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
