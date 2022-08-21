@@ -345,8 +345,8 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc
 
 # Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
+# PRODUCT_PACKAGES += \
+#     XiaomiParts
 
 # Power
 PRODUCT_PACKAGES += \
