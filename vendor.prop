@@ -173,7 +173,7 @@ ro.nfc.port=I2C
 ro.vendor.perf.scroll_opt=true
 
 # RCS
-persist.rcs.supported=1
+persist.rcs.supported=0
 
 # RIL
 persist.radio.dynamic_sar=false
