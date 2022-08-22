@@ -1,7 +1,4 @@
 # Charger
-ro.charger.enable_suspend=1
-persist.vendor.hvdcp_opti.disallowed=1
-persist.vendor.pps.disallowed=1
 persist.vendor.quick.charge=1
 persist.vendor.cp.fcc_main_ua=400000
 persist.vendor.cp.taper_term_mv=7000
