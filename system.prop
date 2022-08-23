@@ -1,4 +1,5 @@
 # Charger
+ro.charger.disable_init_blank=true
 persist.vendor.quick.charge=1
 persist.vendor.cp.fcc_main_ua=400000
 persist.vendor.cp.taper_term_mv=7000
