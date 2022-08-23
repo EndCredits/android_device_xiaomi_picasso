@@ -57,6 +57,7 @@
 # MAC
 /vendor/bin/nv_mac                                              u:object_r:vendor_wcnss_service_exec:s0
 /data/vendor/mac_addr(/.*)?                                     u:object_r:vendor_wifi_vendor_data_file:s0
+/data/vendor/wlan_logs(/.*)?                                u:object_r:vendor_wifi_vendor_log_data_file:s0
 
 # Sys files (health)
 /sys/devices/platform/soc/c440000\.qcom\,spmi/spmi-0/spmi0-02/c440000\.qcom\,spmi\:qcom\,pm7250b\@2\:qpnp\,qg/power_supply/(?!.*wakeup\d+).*                                      u:object_r:vendor_sysfs_battery_supply:s0
