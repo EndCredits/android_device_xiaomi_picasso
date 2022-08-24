@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2021 The LineageOS Project
-# Copyright (C) 2022 Project 404
+# Copyright (C) 2022 AOSPA
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,8 +31,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-    P404PicassoFrameworks \
-    P404PicassoSystemUI \
+    AOSPAPicassoFrameworks \
+    AOSPAPicassoSystemUI \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
@@ -204,6 +204,13 @@ ART_BUILD_HOST_DEBUG := false
 
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
+# Doze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sensor.pickup=xiaomi.sensor.pickup
+
 # Display Device Config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/displayconfig/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
@@ -341,10 +348,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc
-
-# Parts
-# PRODUCT_PACKAGES += \
-#     XiaomiParts
 
 # Power
 PRODUCT_PACKAGES += \

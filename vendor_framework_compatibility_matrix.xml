@@ -506,4 +506,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl">
+        <name>vendor.aospa.power</name>
+        <fqname>IPowerFeature/default</fqname>
+    </hal>
 </compatibility-matrix>
