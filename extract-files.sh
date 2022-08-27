@@ -54,7 +54,7 @@ function blob_fixup() {
             sed -i 's|\x21\x00\x80\x52\x9A\x0A\x00\x94|\x21\x00\x80\x52\x1F\x20\x03\xD5|g' "${2}"
             ;;
         vendor/lib64/camera/components/com.mi.node.watermark.so)
-            "${PATCHELF}" --add-needed "lib-watermarkshim.so" "${2}"
+            patchelf --add-needed "lib-watermarkshim.so" "${2}"
             ;;
     esac
 }
