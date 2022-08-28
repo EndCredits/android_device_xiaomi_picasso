@@ -72,7 +72,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
-TARGET_NO_RAW10_CUSTOM_FORMAT := true
 
 # Display
 TARGET_NO_RAW10_CUSTOM_FORMAT := true
@@ -195,6 +194,9 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+CONFIG_ACS := true
+CONFIG_IEEE80211AC := true
+CONFIG_IEEE80211AX := true
+
 # Inherit from the proprietary version
 include vendor/xiaomi/picasso/BoardConfigVendor.mk
-

@@ -59,7 +59,7 @@ on early-init
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
     # Load WIGIG platform driver
-    # exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules msm_11ad_proxy
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules msm_11ad_proxy
 
 on init
 
@@ -240,8 +240,6 @@ on boot
 
 # msm specific files that need to be created on /data
 on post-fs-data
-    rm /data/vendor/wifi/cnss_diag.conf
-
     mkdir /data/vendor/misc 01771 system system
 
     # Create directory used for dump collection
@@ -280,7 +278,6 @@ on post-fs-data
     mkdir /data/vendor/wifi/hostapd 0770 wifi wifi
     mkdir /data/vendor/wifi/hostapd/ctrl 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa_supplicant 0770 wifi wifi
-    mkdir /data/vendor/mac_addr 0770 system wifi
     mkdir /data/vendor/wifi/wigig_hostapd 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
@@ -335,6 +332,7 @@ on post-fs-data
     mkdir /dev/socket/location 0770 gps gps
     mkdir /dev/socket/location/mq 0770 gps gps
     mkdir /dev/socket/location/xtra 0770 gps gps
+    mkdir /dev/socket/location/dgnss 0770 gps gps
 
     #Create directories for wifihal services
     mkdir /dev/socket/wifihal 0770 wifi wifi
@@ -425,9 +423,6 @@ on post-fs-data
 
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
-
-    #Create dir for dolby
-    mkdir /data/vendor/dolby 0770 media media
 
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
@@ -525,19 +520,11 @@ on property:persist.vendor.radio.atfwd.start=false
 on property:vendor.radio.atfwd.start=false
     stop vendor.atfwd
 
-# corefile limit
-on property:persist.debug.trace=1
-    mkdir /data/core 0777 root root
-    write /proc/sys/kernel/core_pattern "/data/core/core-%e-%p"
-
-on property:vendor.bluetooth.startwdsdaemon=true
-    start vendor.bt_wdsdaemon
-
-on property:vendor.bluetooth.startwdsdaemon=false
-    stop vendor.bt_wdsdaemon
-
 on property:vendor.media.target.version=*
     setprop vendor.sys.media.target.version ${vendor.media.target.version}
+
+on property:vendor.netflix.bsp_rev=*
+    setprop ro.netflix.bsp_rev ${vendor.netflix.bsp_rev}
 
 on property:vendor.media.target_variant=*
     setprop ro.media.xml_variant.codecs ${vendor.media.target_variant}
@@ -569,13 +556,6 @@ service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     user root
     oneshot
 
-service vendor.bt_wdsdaemon /system/vendor/bin/wdsdaemon -su
-    class late_start
-    user root
-    group bluetooth diag system wakelock
-    disabled
-    oneshot
-
 service qmiproxy /system/bin/qmiproxy
     class main
     user radio
@@ -589,20 +569,6 @@ on property:ro.data.large_tcp_window_size=true
 
 on property:sys.sysctl.tcp_adv_win_scale=*
     write /proc/sys/net/ipv4/tcp_adv_win_scale ${sys.sysctl.tcp_adv_win_scale}
-
-service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
-    -O/data/vendor/wifi/wpa/sockets -puse_p2p_group_interface=1 -dd \
-    -g@android:vendor_wpa_wlan0
-#   we will start as root and wpa_supplicant will switch to user wifi
-#   after setting up the capabilities required for WEXT
-#   user wifi
-#   group wifi inet keystore
-    interface android.hardware.wifi.supplicant@1.0::ISupplicant default
-    interface android.hardware.wifi.supplicant@1.1::ISupplicant default
-    class main
-    socket vendor_wpa_wlan0 dgram 660 wifi wifi
-    disabled
-    oneshot
 
 service vendor.wigig_supplicant /vendor/bin/hw/wpa_supplicant \
     -iwigig0 -Dnl80211 -c/data/vendor/wifi/wigig_supplicant.conf \
@@ -627,16 +593,12 @@ service vendor.move_wifi_data /system/bin/move_wifi_data.sh
     disabled
     oneshot
 
-service wigignpt /vendor/bin/wigignpt
+service vendor.sensingdaemon /vendor/bin/sensingdaemon
     class hal
-    socket wigig/wigignpt stream 660 system wifi
+    socket wigig/sensingdaemon stream 660 system wifi
     user system
     group wifi
-    capabilities NET_ADMIN
     disabled
-
-on property:persist.vendor.wigig.npt.enable=1
-    start wigignpt
 
 service dhcpcd_wlan0 /system/bin/dhcpcd -ABKLG
     class late_start
@@ -675,6 +637,19 @@ service iprenew_p2p /system/bin/dhcpcd -n
 
 service iprenew_wigig0 /system/bin/dhcpcd -n
     class late_start
+    disabled
+    oneshot
+
+service ptt_socket_app /system/vendor/bin/ptt_socket_app -d
+    class main
+    user wifi
+    group wifi system inet net_admin
+    capabilities NET_ADMIN
+    oneshot
+
+service ptt_ffbm /system/vendor/bin/ptt_socket_app -f -d
+    user root
+    group root
     disabled
     oneshot
 
@@ -772,6 +747,11 @@ on property:sys.boot_completed=1
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
+
+service qvop-daemon /vendor/bin/qvop-daemon
+    class late_start
+    user system
+    group system drmrpc
 
 service vendor.atfwd /vendor/bin/ATFWD-daemon
     class late_start

@@ -304,27 +304,6 @@ on property:init.svc.surfaceflinger=restarting
 on property:sys.boot_completed=1
     start displaycount
 
-service sniffer /vendor/bin/tcpdump -i wlan0 -w /data/vendor/wlan_logs/sniffer.pcap
-    class main
-    user root
-    group root wifi inet net_admin
-    disabled
-    oneshot
-
-service tcpdump /vendor/bin/tcpdump -i any -W 2 -C 2 -s 134 -w /data/vendor/wlan_logs/tcpdump.pcap
-    class main
-    user root
-    group root wifi
-    disabled
-    oneshot
-
-service tcpdump_full /vendor/bin/tcpdump -i any -W 3 -C 40 -w /data/vendor/wlan_logs/tcpdump_full.pcap
-    class main
-    user root
-    group root wifi
-    disabled
-    oneshot
-
 on property:sys.user.0.ce_available=true
     start cnss_diag
     start tcpdump
@@ -338,19 +317,6 @@ service nv_mac /vendor/bin/nv_mac
     group system inet net_admin wifi net_raw
     oneshot
 
-service startpktlog /system/bin/iwpriv wlan0 pktlog 2
-    class main
-    user root
-    group root
-    disabled
-    oneshot
-
-service stoppktlog /system/bin/iwpriv wlan0 pktlog 0
-    class main
-    user root
-    group root
-    disabled
-    oneshot
 
 on post-fs-data
     chmod 0666 /dev/migt
