@@ -12,9 +12,6 @@
      limitations under the License.
 -->
 <resources>
-    <!--  DT2W    -->
-    <string name="dt2w_enable_title">点按两次来唤醒 </string>
-    <string name="dt2w_enable_summary">在屏幕关闭的状态下，双击开启屏幕</string>
     <!-- Refresh Rates -->
     <string name="fps_title">刷新率</string>
     <string name="fps_summary">调整每个应用的刷新率</string>

@@ -12,10 +12,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- DT2W -->
-    <string name="dt2w_enable_title">Doble toque para despertar</string>
-    <string name="dt2w_enable_summary">Toca dos veces cualquier punto de la pantalla en suspensión para activar el dispositivo.</string>
-
+     
     <!-- Dirac settings -->
     <string name="dirac_enable">Activar el ecualizador Dirac</string>
     <string name="dirac_title">Ecualizador Dirac</string>
