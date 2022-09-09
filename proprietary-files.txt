@@ -82,7 +82,7 @@ vendor/lib/rfsa/adsp/misound_res.bin
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
-# Power-off alarm - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
+# Alarm - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|8408621f9b8a1616937f0b7e2a757666a375dc09
 system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar|53c8e43e6ab1db1c3824626b1503b92991c24e7e
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|6446a38537ceb4afdc2cdbbd7645e2616842ba6a
@@ -102,6 +102,7 @@ vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/vndk/libxlog.so
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
+vendor/lib/libadsprpc.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioconfigstore.so
@@ -113,6 +114,7 @@ vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib64/hw/audio.primary.lito.so
 vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib64/libadiertac.so
+vendor/lib64/libadsprpc.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioconfigstore.so
@@ -463,6 +465,9 @@ vendor/lib64/libmdsprpc.so|f9c68f67cbd89178ea5bc042e5b62e45f63acc90
 vendor/lib64/libsdsprpc.so|a78aea850416e674872747e9ca6da1dc88f12958
 vendor/lib64/libsysmon_cdsp_skel.so|3ae87b24980f983ba83fd563134328bb0f6f62e8
 
+# Charger
+vendor/bin/batterysecret
+vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
 vendor/etc/init/init.batterysecret.rc
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
@@ -800,6 +805,7 @@ vendor/lib/hw/vulkan.adreno.so|dbcf1f95f364957d79c21970c1994cdeeab087cf
 vendor/lib64/hw/vulkan.adreno.so|9aefb6da610ebda6afc7061275d1e150671cde70
 
 # IPA Firmware
+vendor/etc/init/ipa_fws.rc
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
 vendor/firmware/ipa_fws.b02
@@ -812,13 +818,18 @@ vendor/firmware/ipa_fws.mdt
 vendor/bin/msm_irqbalance|2ac477da6216b8bf616db5a205dac4059b6d73a4
 vendor/etc/msm_irqbalance.conf|048e1a7f35df0e7acb14cb573d4aab363ea7c8bd
 
-# Keymaster - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
-vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|f73b61eaa74cd0257d168f88133ee171b9349bf9
-vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|9816f37e7487295e29a19d05c4a3e6b7b0ec35ea
-vendor/lib64/libkeymasterdeviceutils.so|2d0e5a9a38231b2539ca30170358e37f2ff4fe62
-vendor/lib64/libkeymasterprovision.so|bbfa6830e2996e7fe017c9885854e74a662b0cec
-vendor/lib64/libkeymasterutils.so|572e22dd69debd0f64c5df9f723276f0184e36cc
-vendor/lib64/libqtikeymaster4.so|f153c221cc8100a3fdd8436a3ed7ba86d64d01a1
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
+vendor/lib/libkeymasterdeviceutils.so
+vendor/lib/libkeymasterprovision.so
+vendor/lib/libkeymasterutils.so
+vendor/lib/libqtikeymaster4.so
+vendor/lib64/libkeymaster_messages.so|ded5c943c17022eb34cafefdeefb1fccf3a9ae96
+vendor/lib64/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so
+vendor/lib64/libqtikeymaster4.so
 
 # Listen - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
 vendor/lib/hw/sound_trigger.primary.lito.so|eea1b9ecc036a7db729f5e24b918aaa822404feb
@@ -1398,6 +1409,10 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 # Subsystem
 vendor/bin/ssr_setup
 
+# Thermal
+vendor/bin/mi_thermald
+vendor/etc/init/init.mi_thermald.rc
+
 # Thermal engine - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
 vendor/bin/thermal-engine|63eaafcd66f41133cc721e6dacffb718b7868034
 -vendor/lib/libthermalclient.so|20114bc026d44fd2599f6ea11814c0f47608d2ff
@@ -1454,9 +1469,16 @@ vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/liboemcrypto.so
+vendor/lib/libbase64.so
+vendor/lib/libcppf.so
+vendor/lib/liboemcrypto.so|2c1525754f661b20bd83a9cd4ca6b56d78d88476
+vendor/lib/libtrustedapploader.so
+vendor/lib/libwvkeybox.so|1d30d25fa4a9ec8c9f2bd41147da45724dbcf7de
+vendor/lib64/libbase64.so
+vendor/lib64/liboemcrypto.so|6967571dfa2de7f4d73731ab0879245361827831
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so
+vendor/lib64/libwvkeybox.so|8898c5a7bc366bf378804e9aba3245aeacdedfd5
 
 # WiFi
 vendor/bin/cnss-daemon
