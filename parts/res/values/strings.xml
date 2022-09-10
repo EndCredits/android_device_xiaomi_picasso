@@ -12,7 +12,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-     
+
+    <!-- DT2W -->
+    <string name="dt2w_enable_title">Double-tap to wake</string>
+    <string name="dt2w_enable_summary">Double-tap on lockscreen to wake device</string>
+
     <!-- Dirac settings -->
     <string name="dirac_enable">Enable enhancer</string>
     <string name="dirac_title">Mi sound enhancer</string>
