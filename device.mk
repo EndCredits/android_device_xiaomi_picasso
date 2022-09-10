@@ -330,11 +330,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
+    libavservices_minijail_vendor \
+    libcodec2_hidl@1.0.vendor:32 \
+    libcodec2_vndk.vendor:32 \
     libstagefright_softomx.vendor
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
-    $(LOCAL_PATH)/media/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
     $(LOCAL_PATH)/media/media_codecs_performance_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_v1.xml \
     $(LOCAL_PATH)/media/media_codecs_performance_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_v2.xml \
     $(LOCAL_PATH)/media/media_codecs_performance_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_v3.xml \
@@ -423,11 +424,16 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
+    android.hardware.power-service.xiaomi-libperfmgr
+
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions-system_ext-Gcam.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions-system_ext-Gcam.xml \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -528,8 +534,8 @@ PRODUCT_PACKAGES += \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
     libwpa_client \
-    vendor.qti.hardware.wifi.hostapd@1.2.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.2.vendor \
+    android.hardware.wifi.supplicant \
+    android.hardware.wifi.hostapd \
     WifiResCommon \
     wpa_supplicant \
     wpa_supplicant.conf
@@ -538,3 +544,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl \
+    libwfdaac_vendor
