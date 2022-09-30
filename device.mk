@@ -519,7 +519,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
 
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-V1-ndk_platform.vendor
+    android.hardware.vibrator-V1-ndk.vendor
 
 # WiFi
 PRODUCT_PACKAGES += \
