@@ -66,7 +66,7 @@ public class PickupSensor implements SensorEventListener {
         mEntryTimestamp = SystemClock.elapsedRealtime();
 
         if (event.values[0] == 1) {
-            DozeUtils.wakeOrLaunchDozePulse(mContext);
+            DozeUtils.launchDozePulse(mContext);
         }
     }
 

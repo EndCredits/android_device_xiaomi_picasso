@@ -16,16 +16,12 @@
 
 package org.lineageos.settings.dirac;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Switch;
-import androidx.preference.Preference;
+
 import androidx.preference.ListPreference;
+import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 
@@ -89,7 +85,8 @@ public class DiracSettingsFragment extends PreferenceFragment implements
             case PREF_PRESET:
                 DiracUtils.setLevel((String) newValue);
                 return true;
-            default: return false;
+            default:
+                return false;
         }
     }
 
