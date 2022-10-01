@@ -1,0 +1,1 @@
+allow network_stack fs_bpf:file rw_file_perms;
