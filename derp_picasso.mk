@@ -24,6 +24,19 @@ PRODUCT_DEVICE := picasso
 PRODUCT_MODEL := Redmi K30 5G
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_SYSTEM_NAME := Redmi K30 5G
+PRODUCT_SYSTEM_DEVICE := Redmi K30 5G
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="redfin-user 13 TP1A.220905.004 8927612 release-keys" \
+    TARGET_DEVICE="picasso" \
+    TARGET_PRODUCT="picasso"
+
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := google/redfin/redfin:13/TP1A.220905.004/8927612:user/release-keys
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
