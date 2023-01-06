@@ -197,6 +197,7 @@ vendor.gralloc.disable_ubwc=0
 debug.gralloc.enable_fb_ubwc=1
 vendor.display.disable_scaler=1
 vendor.display.disable_rotator_downscale=1
+debug.sf.auto_latch_unsignaled=false
 
 # DPM
 persist.vendor.dpm.feature=1
