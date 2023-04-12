@@ -63,6 +63,9 @@
 # Power
 /vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr      u:object_r:hal_power_default_exec:s0
 
+# UFS read_ahead_kb
+/sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/read_ahead_kb     u:object_r:vendor_sysfs_mmc_host:s0
+
 # Sys files (health)
 /sys/devices/platform/soc/c440000\.qcom\,spmi/spmi-0/spmi0-02/c440000\.qcom\,spmi\:qcom\,pm7250b\@2\:qpnp\,qg/power_supply/(?!.*wakeup\d+).*                                      u:object_r:vendor_sysfs_battery_supply:s0
 
