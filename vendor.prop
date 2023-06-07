@@ -132,6 +132,10 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 ro.hardware.fp.sideCap=true
 ro.hardware.fp.vendor=goodix,fpc
 
+# HVDCP
+persist.vendor.pps.disallowed=1
+persist.vendor.hvdcp_opti.disallowed=1
+
 # Keystore
 ro.hardware.keystore_desede=true
 
