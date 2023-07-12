@@ -39,6 +39,10 @@ vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
 
+# ADSP
+vendor/lib/libadsprpc.so
+vendor/lib64/libadsprpc.so
+
 # ADSP - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
 vendor/bin/adsprpcd|2886f08eb674b6ced8bf6e9bb54761094ee7b74c
 vendor/bin/dspservice|081468b9bc63cab921ac1e37a95eb93bd16e23f9
