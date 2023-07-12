@@ -19,13 +19,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/xiaomi \
-    hardware/google/interfaces \
-    hardware/google/pixel
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
@@ -110,7 +103,6 @@ PRODUCT_PACKAGES += \
     audio.primary.lito \
     audio.r_submix.default \
     audio.usb.default \
-    libaacwrapper \
     libaudiopreprocessing \
     libbatterylistener \
     libbundlewrapper \
@@ -310,10 +302,6 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
-# KeyHandler
-PRODUCT_PACKAGES += \
-    KeyHandler
-
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
@@ -423,10 +411,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
 
-PRODUCT_SOONG_NAMESPACES += \
-    hardware/google/interfaces \
-    hardware/google/pixel
-
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions-system_ext-Gcam.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions-system_ext-Gcam.xml \
@@ -474,6 +458,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/xiaomi \
+    vendor/qcom/opensource/usb/etc
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
@@ -509,9 +501,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh
-
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/qcom/opensource/usb/etc
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
