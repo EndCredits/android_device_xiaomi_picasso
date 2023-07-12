@@ -472,5 +472,13 @@
         <name>IServicetracker</name>
         <instance>default</instance>
     </interface>
-</hal>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.audiohalext</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAudioHalExt</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>

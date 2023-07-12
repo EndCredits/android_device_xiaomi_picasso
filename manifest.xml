@@ -294,4 +294,9 @@
         <transport>hwbinder</transport>
         <fqname>@3.0::IRTPService/imsrtpservice</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.audiohalext</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0IAudioHalExt/default</fqname>
+    </hal>
 </manifest>
