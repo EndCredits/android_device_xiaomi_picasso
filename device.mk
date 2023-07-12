@@ -285,20 +285,24 @@ PRODUCT_COPY_FILES += \
 # Init scripts
 PRODUCT_PACKAGES += \
     fstab.default \
-    fstab.default.ramdisk \
     fstab.emmc \
-    fstab.emmc.ramdisk \
+    init.fingerprint.rc \
+    init.qcom.power.rc \
+    init.qcom.rc \
+    init.recovery.qcom.rc \
+    init.target.rc \
+    init.xiaomi.rc \
+    ueventd.qcom.rc
+
+PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.mdm.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
-    init.qcom.rc \
     init.qcom.sh \
-    init.recovery.qcom.rc \
-    init.target.rc \
-    init.xiaomi.rc \
-    ueventd.qcom.rc
+    init.qti.dcvs.sh \
+    init.veth_ipa_config.sh
 
 # IFAA manager
 PRODUCT_PACKAGES += \

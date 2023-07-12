@@ -1,4 +1,5 @@
 on init
+    # Goodix fingerprint
     chmod 0666 /dev/goodix_fp
     chown system system /dev/goodix_fp
     chmod 0664 /dev/fortsense_fp
@@ -27,6 +28,11 @@ on boot
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/finger_irq
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/request_vreg
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/power_cfg
+    chown system system /sys/class/drm/card0-DSI-1/disp_param
+    chmod 0700 /sys/class/drm/card0-DSI-1/disp_param
+    chown system system /sys/class/drm/card0-DSI-1/panel_info
+    chmod 0744 /sys/class/drm/card0-DSI-1/panel_info
+    chmod 0666 /dev/input/event2
 
 on post-fs-data
     mkdir /data/vendor/fpc 0770 system system
