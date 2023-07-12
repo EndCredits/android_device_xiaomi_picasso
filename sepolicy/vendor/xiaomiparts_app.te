@@ -1,6 +1,4 @@
 binder_call(xiaomiparts_app, hal_touchfeature_default)
-allow xiaomiparts_app hal_touchfeature_hwservice:hwservice_manager { find };
-allow xiaomiparts_app overlay_service:service_manager { find };
 allow xiaomiparts_app content_capture_service:service_manager { find };
 allow xiaomiparts_app system_data_file:dir { search };
 allow xiaomiparts_app user_profile_root_file:dir { search };

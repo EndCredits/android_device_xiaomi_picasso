@@ -1,2 +1,0 @@
-get_prop(vendor_qtidataservices_app, default_prop)
-allow vendor_qtelephony default_android_service:service_manager { find };

@@ -1,3 +1,2 @@
 allow system_server vendor_sysfs_battery_supply:file { getattr open read write };
 allow system_server vendor_sysfs_battery_supply:file rw_file_perms;
-allow system_server sysfs:file rw_file_perms;

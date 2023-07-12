@@ -1,2 +1,1 @@
 allow vendor_timeservice_app zygote:unix_stream_socket { getopt };
-get_prop(vendor_timeservice_app, default_prop)

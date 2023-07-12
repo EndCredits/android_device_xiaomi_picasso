@@ -3,12 +3,7 @@ allow init adsprpcd_file:file mounton;
 allow init hal_fingerprint_default:process { ptrace };
 
 get_prop(vendor_init, persist_debug_prop)
-get_prop(vendor_init, default_prop)
-allow vendor_init device:chr_file rw_file_perms;
 allow vendor_init proc_sched:file rw_file_perms;
-allow init vendor_file:file { execute execute_no_trans };
-binder_call(init, hwservicemanager)
-binder_call(init, system_server)
 allow init vendor_sysfs_usb_supply:file rw_file_perms;
 
 allow init self:netlink_kobject_uevent_socket { create setopt getopt bind read };

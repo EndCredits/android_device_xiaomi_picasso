@@ -1,1 +1,0 @@
-allow hal_wifi_supplicant_default device:chr_file rw_file_perms;

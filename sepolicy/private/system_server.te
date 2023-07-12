@@ -1,4 +1,0 @@
-allow system_server fuse:file { read open };
-binder_call(system_server, init)
-get_prop(system_server, vendor_default_prop)
-allow system_server self:capability { sys_module };
