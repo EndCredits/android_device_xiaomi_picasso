@@ -289,7 +289,6 @@ PRODUCT_PACKAGES += \
     init.fingerprint.rc \
     init.qcom.power.rc \
     init.qcom.rc \
-    init.recovery.qcom.rc \
     init.target.rc \
     init.xiaomi.rc \
     ueventd.qcom.rc
@@ -303,6 +302,11 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qti.dcvs.sh \
     init.veth_ipa_config.sh
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_RAMDISK)/fstab.default \
+    $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_RAMDISK)/fstab.emmc \
+    $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc
 
 # IFAA manager
 PRODUCT_PACKAGES += \
