@@ -792,14 +792,6 @@ vendor/firmware/a650_zap.b02
 vendor/firmware/a650_zap.elf
 vendor/firmware/a650_zap.mdt
 
-# IO prefetcher - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|86bd66dc300784de916f7d9193f08b9db944945d
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
-vendor/lib64/libqti-iopd-client.so|9e7561634158cd01b037e740e51cb22cd1119e04
-vendor/lib64/libqti-iopd.so|7aa0119a10e7d22c43369139f5e115295f5bf937
-vendor/lib64/vendor.qti.hardware.iop@1.0.so|3f40f4c385de9a3d0a44797ae0fd6346034adaf3
-vendor/lib64/vendor.qti.hardware.iop@2.0.so|db29e7381058cf53b2e8827fb2ecb51b981c204e
-
 # IPA Firmware
 vendor/etc/init/ipa_fws.rc
 vendor/firmware/ipa_fws.b00
@@ -945,30 +937,6 @@ vendor/lib64/libOmxSwVencMpeg4.so|17ac7ae89806ec4434d3404a015d3db70b3ac449
 vendor/lib64/libOmxVpp.so|85299c02bb0f830d5144fb0b01e2bf819169b3cb
 vendor/lib64/libOmxWmaDec.so|53d4b8e8a214caf7865d69cb02f4b722f0967c7d
 vendor/lib64/libswvdec.so|e50cc714152873d4fdcabd3ed1bbf9e635725b78
-
-# Perf - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|971f7bd411be93ae33f58169c138ff2da98c2eaf
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
-vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
-vendor/etc/perf/perfboostsconfig.xml|9652aaa71f9c5c2fdd751ca6f8cf3e25a172e78b
-vendor/etc/perf/perfconfigstore.xml|83264a65d53dfda9093ba9e60d1c35a962a047a6
-vendor/etc/perf/targetconfig.xml|5b00718848682cb642bf745ec195b09ba88160df
-vendor/etc/perf/targetresourceconfigs.xml|a4b1055bfa7d8bae174e785dba315ded2dea022f
-vendor/etc/powerhint.xml|c2b41b96efb5f917d2bce57e5371ee96e0392139
-vendor/lib/libperfconfig.so|510466519cd2e3aaf5a6cc6aefef9f68eeac9e6c
-vendor/lib/libperfgluelayer.so|5c4e2c0b546964db58e959b10abff970219d4f0c
-vendor/lib/libperfioctl.so|fcc14060de57a16c15f621679624e9845dda0fdb
-vendor/lib/libqti-perfd-client.so|c6c8b5588212eb38e3c3959f97e2edea1b1f51bc
-vendor/lib/libqti-perfd.so|69ab2f1477d4de979c7bfab6f7803997107ecd23
-vendor/lib/libqti-util.so|560bc0793438df2b74b127a31929ed95b2b90a40
-vendor/lib64/liblearningmodule.so|03007c9362b19a60c24adcc8ae7a486a7c98973d
-vendor/lib64/libmeters.so|62dabee0626894ff2fc86e5aff374803f57094aa
-vendor/lib64/libperfconfig.so|31c2fdd9ac89d30a67ee2cca91d090aaa9e3b56f
-vendor/lib64/libperfgluelayer.so|cc514ef935317cdc6c9de0749492337325f8ee22
-vendor/lib64/libperfioctl.so|f549443c16df6df58357c35566ec33ec4e1d394f
-vendor/lib64/libqti-perfd-client.so|070cf54f6fba25c0e94845812b3b781022064e49
-vendor/lib64/libqti-perfd.so|b80cba9507b927e07658784cac6e862502bd66af
-vendor/lib64/libqti-util.so|2579b7fd8a246ea9ba69aac117867913d989f69b
 
 # QCC - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service|b49b4964ca1b391921b05d0350479bae517a75ae
