@@ -10,7 +10,6 @@
 # Devices
 /dev/akm09970                                                   u:object_r:hall_device:s0
 /dev/elliptic(.*)?                                              u:object_r:ultrasound_device:s0
-/dev/goodix_fp                                                  u:object_r:fingerprint_device:s0
 /dev/ir_spi                                                     u:object_r:ir_device:s0
 /dev/ti-drv8846                                                 u:object_r:motor_device:s0
 /dev/xiaomi-touch                                               u:object_r:touchfeature_device:s0
