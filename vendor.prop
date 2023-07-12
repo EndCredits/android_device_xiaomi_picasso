@@ -178,9 +178,6 @@ ro.nfc.port=I2C
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
-# Pre-rendering
-ro.vendor.perf.scroll_opt=true
-
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
 
