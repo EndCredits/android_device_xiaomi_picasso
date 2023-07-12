@@ -456,4 +456,21 @@
             <instance>MwqemAdapter</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+        <name>android.hardware.media.c2</name>
+        <version>1.0</version>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>default</instance>
+            <instance>software</instance>
+        </interface>
+   </hal>
+   <hal format="hidl">
+    <name>vendor.qti.hardware.servicetracker</name>
+    <version>1.2</version>
+    <interface>
+        <name>IServicetracker</name>
+        <instance>default</instance>
+    </interface>
+</hal>
 </compatibility-matrix>
