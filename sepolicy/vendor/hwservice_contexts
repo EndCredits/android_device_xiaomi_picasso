@@ -19,3 +19,6 @@ vendor.nxp.nxpnfc::INxpNfc                                          u:object_r:h
 
 # Secure element
 vendor.nxp.nxpese::INxpEse                                          u:object_r:hal_secure_element_hwservice:s0
+
+# FX Tunnel
+vendor.xiaomi.hardware.fx.tunnel::IMiFxTunnel                                   u:object_r:hal_fingerprint_hwservice:s0
