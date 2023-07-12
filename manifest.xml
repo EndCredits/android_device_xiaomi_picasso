@@ -297,7 +297,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.audiohalext</name>
         <transport>hwbinder</transport>
-        <fqname>@1.0IAudioHalExt/default</fqname>
+        <fqname>@1.0::IAudioHalExt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>com.fingerprints.extension</name>
@@ -315,6 +315,6 @@
     <hal format="hidl">
         <name>vendor.xiaomi.hardware.fx.tunnel</name>
         <transport>hwbinder</transport>
-        <fqname>@1.0IMiFxTunnel/default</fqname>
+        <fqname>@1.0::IMiFxTunnel/default</fqname>
     </hal>
 </manifest>
