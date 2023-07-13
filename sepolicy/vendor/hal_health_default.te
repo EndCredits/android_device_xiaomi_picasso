@@ -1,1 +1,9 @@
 allow hal_health_default sysfs:file { read open getattr };
+
+# Allow health HAL to read vendor_sysfs_battery_supply
+r_dir_file(hal_health_default, vendor_sysfs_battery_supply)
+
+allow hal_health_default sysfs_wakeup:dir r_dir_perms;
+allow hal_health_default sysfs_wakeup:file r_file_perms;
+allow hal_health_default sysfs:file { getattr read open };
+allow hal_health_default vendor_sysfs_battery_supply:file r_file_perms;
