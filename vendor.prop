@@ -258,6 +258,9 @@ ro.nfc.port=I2C
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# QSPM
+ro.vendor.qspm.enable=true
+
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
 
