@@ -834,24 +834,27 @@ vendor/bin/npu_launcher
 vendor/lib/libnpu.so
 vendor/lib64/libnpu.so
 
-# Media (Codec2) - from LA.UM.9.12.r1-14000.04-SMxx50.QSSI12.0
-vendor/bin/hw/vendor.qti.media.c2@1.0-service|c170ebc5a0416f609186639125132b87a5650ef8
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
-vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy|3c396a276dfb589501105e7158459fa2d644607e
-vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy|a134d3d5d74294ca8164056b42389b1c7dbb2b65
--vendor/etc/vintf/manifest/c2_manifest_vendor.xml|0e532bf1c7d6a0ee2e7e03a9cc3283a5bffc7f8e
-vendor/etc/media_codecs_c2.xml|5c2ab87923210f36952b41c043b7f05b0674d7e5
-vendor/etc/media_codecs_performance_c2.xml|916853397f85e44accae49f7e1b112c97fe12381
-vendor/lib/libcodec2_hidl@1.0.so|78f2b61ad3b818729f93fed57200ba64292da0fc
-vendor/lib/libcodec2_vndk.so|a8ba77ae6afcd6492113149f9756712c517db09a
-vendor/lib/libqcodec2_base.so|5bec0dec355c90d2a9739105b6d9810291ab9995
-vendor/lib/libqcodec2_basecodec.so|a517b6a89bf54d58c46758621c6dce9056cb92f7
-vendor/lib/libqcodec2_core.so|e82b50bc9574436fdc8b881cb94ffa8fae409dd3
-vendor/lib/libqcodec2_platform.so|77f33c008a7b7c0b8f2b4c992b26c2da8e69fe24
-vendor/lib/libqcodec2_utils.so|867b95c219f59126bbf19bb63fba43f9f7a30462
-vendor/lib/libqcodec2_v4l2codec.so|ffd18f2c4cfad643a3409165281cf1115488ad0a
-vendor/lib64/libcodec2_hidl@1.0.so|28d291883503fd280cd2016967753029a4e9a4fd
-vendor/lib64/libcodec2_vndk.so|b33e53a931c89c6d6c629969888836202c6526d0
+# Media (Codec2)
+vendor/bin/hw/vendor.qti.media.c2@1.0-service
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
+vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
+vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
+vendor/etc/vintf/manifest/c2_manifest_vendor.xml
+vendor/lib/libqcodec2_base.so
+vendor/lib/libqcodec2_basecodec.so
+vendor/lib/libqcodec2_core.so
+vendor/lib/libqcodec2_platform.so
+vendor/lib/libqcodec2_utils.so
+vendor/lib/libqcodec2_v4l2codec.so
+vendor/lib/libvideooptfeature.so
+vendor/lib/libvideoutils.so
+vendor/lib64/libqcodec2_base.so
+vendor/lib64/libqcodec2_basecodec.so
+vendor/lib64/libqcodec2_core.so
+vendor/lib64/libqcodec2_platform.so
+vendor/lib64/libqcodec2_utils.so
+vendor/lib64/libqcodec2_v4l2codec.so
+vendor/lib64/libvideooptfeature.so
 
 # Media - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
 system_ext/lib/libmmosal.so|f5220fd635271685df63a27bde00d638e14e2728
