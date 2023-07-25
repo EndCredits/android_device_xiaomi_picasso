@@ -13,6 +13,3 @@ type proc_last_kmsg, fs_type, proc_type;
 
 # Persist
 type persist_subsys_file, vendor_persist_type, file_type;
-
-# Props
-type vendor_power_prop, property_type;
